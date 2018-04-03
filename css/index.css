@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a::before {
+    color: white;
+}
+
+a::after {
+    color: white;
+}
+
+.head {
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    /* position: fixed; */
+    color: white;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.head-table {
+    width: 100%;
+}
+
+.head-table td:first-child {
+    text-align: left;
+    width: 75%;
+}
+
+.head-table td {
+    text-align: center;
+}
+
+.body {
+    width: 100%;
+}
+
+.nav-table {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+
+.nav {
+    position: absolute;
+    height: 100px;
+    top: 100px;
+}
+
+.nav-table td {
+    font-family: 微软雅黑;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-table td:hover {
+    color: rgb(53, 144, 218);
+}
+
+.logo {
+    width: 30%
+}
+
+.logo img {
+    height: 100px;
+}
+
+.serch {
+    width: 20%；
+}
+
+.am-input-group {
+    width: 70%;
+}
+
+.foot {
+    width: 100%;
+    height: 200px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -6px;
+}
+
+.foot p {
+    margin: 0;
+    padding: 0;
+}
+
+.foot p:first-child {
+    padding-top: 50px;
+}
+
+.foot p:last-child {
+    padding-top: 20px;
+}

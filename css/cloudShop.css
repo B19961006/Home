@@ -1,0 +1,488 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-size: 100%;
+    background: rgb(210, 210, 210);
+}
+
+
+/*导航窗*/
+
+.head-img {
+    float: left;
+    height: 100px;
+}
+
+.head-imgs {
+    margin-left: 100px;
+    opacity: 1;
+    height: 100%;
+}
+
+.head-imgs:hover {
+    opacity: 1;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    /* position: fixed; */
+    /*固定导航窗*/
+    opacity: 0.8;
+    /*设置透明度*/
+}
+
+.nav-a {
+    margin-top: 2%;
+    float: left;
+    font-family: "仿宋";
+    color: white;
+    font-size: 2em;
+}
+
+.nav-a a {
+    text-decoration: none;
+}
+
+.nav-a a:link {
+    color: white;
+}
+
+.nav-a a:visited {
+    color: white;
+}
+
+.nav-a a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px white;
+}
+
+.nav-ul {
+    position: relative;
+    left: 25%;
+    top: 20%;
+    color: white;
+}
+
+.nav-ul ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu li {
+    display: block;
+    margin-left: 40px;
+    float: left;
+}
+
+.sub-menu li {
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+.sub-menu {
+    color: rgb(180, 180, 180);
+    text-align: center;
+    position: absolute;
+    left: -90000px;
+}
+
+.sub-menu a:visited {
+    color: rgb(180, 180, 180);
+}
+
+.sub-menu a:hover {
+    border-bottom: 1px dashed white;
+}
+
+.main-menu li:hover .sub-menu {
+    position: absolute;
+    left: auto;
+}
+
+.nav-ul a {
+    text-decoration: none;
+}
+
+.nav-ul a:link {
+    color: rgb(180, 180, 180);
+}
+
+.nav-ul a:visited {
+    color: rgb(180, 180, 180);
+}
+
+.nav-ul a:hover {
+    color: white;
+}
+
+#login:hover {
+    cursor: pointer;
+}
+
+
+/* body部分 */
+
+.cloud-shop {
+    height: 50px;
+    color: green;
+    font-size: 20px;
+}
+
+.body {
+    margin: 0 auto;
+    width: 1200px;
+    height: 2220px;
+    box-sizing: border-box;
+}
+
+.commodity-list {
+    width: 1200px;
+    /* height: 100%; */
+    box-sizing: border-box;
+    float: left;
+}
+
+.classify {
+    width: 200px;
+    height: 600px;
+    box-sizing: border-box;
+    float: left;
+    /* background: aqua; */
+}
+
+.classify li {
+    display: block;
+    height: 140.5px;
+    width: 100%;
+    text-align: center;
+    line-height: 140.5px;
+    font-size: 1.6em;
+    background: rgb(33, 150, 78);
+    border-bottom: 2px solid white;
+}
+
+.classify li:last-child {
+    border: none;
+}
+
+.classify li:hover {
+    background-color: white;
+    color: orange;
+}
+
+.classify li:hover a {
+    color: rgb(26, 248, 111);
+}
+
+.classify li a {
+    color: white;
+}
+
+.classify li a::after {
+    color: white;
+}
+
+.classify li a::before {
+    color: white;
+}
+
+.classify li:hover .sub-classify {
+    display: block
+}
+
+.line {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 0;
+    height: 50px;
+    border-bottom: 2px solid rgb(26, 248, 111);
+}
+
+.classify li:hover .line {
+    width: 140px;
+    transition: linear 0.2s;
+}
+
+.sub-classify {
+    position: relative;
+    display: none;
+    top: -80px;
+    left: 200px;
+    z-index: 900;
+}
+
+.sub-classify li {
+    background: rgb(33, 150, 78);
+    display: block;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    border-bottom: 1px solid white;
+}
+
+.carousel {
+    width: 1000px;
+    height: 600px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    /*width: 1000px;*/
+    height: 562px;
+}
+
+.hot-title {
+    height: 40px;
+    color: orange;
+    font-size: 18px;
+}
+
+.meat {
+    height: 70px;
+}
+
+.hot-goods {
+    width: 100%;
+}
+
+.hot-goods table td {
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+.body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hot-goods-img li {
+    float: left;
+    text-align: center;
+}
+
+.hot-goods-img :first-child {
+    margin-left: 3px;
+}
+
+.hot-goods-img span {
+    margin: 3px;
+}
+
+.hot-goods-img span:last-child {
+    color: red;
+    font-size: 1.4em;
+    font-family: 仿宋;
+}
+
+.hot-goods-img span:last-child:hover {
+    background: red;
+    color: white;
+    font-size: 1.4em;
+    font-family: 仿宋;
+    cursor: pointer;
+}
+
+.hot-goods-class {
+    font-family: 楷体;
+    /* font-size: 1em; */
+    color: white;
+    background: orange;
+}
+
+.kinds td:hover {
+    cursor: pointer;
+}
+
+.hot-goods p:first-child {
+    font-size: 1.5em;
+}
+
+.hot-goods p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.hot-goods-img span {
+    display: block;
+    width: 291px;
+    text-align: center;
+}
+
+.hot-goods-img img {
+    box-sizing: border-box;
+    width: 291px;
+    height: 220px;
+    /* border: 1px solid rgb(210, 210, 210); */
+    transition: all 0.6s;
+}
+
+.hot-goods-img img:hover {
+    transform: scale(1.05);
+}
+
+#hot-goods-2 {
+    display: none;
+}
+
+#hot-goods-3 {
+    display: none;
+}
+
+#hot-goods-4 {
+    display: none;
+}
+
+#hot-meat-2 {
+    display: none;
+}
+
+#hot-meat-3 {
+    display: none;
+}
+
+#hot-meat-4 {
+    display: none;
+}
+
+.subscription {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+
+.subscription-title h1 {
+    color: rgba(243, 142, 15, 1);
+    margin-bottom: 0;
+}
+
+.subscription-disc {
+    margin-bottom: 0;
+    color: rgba(243, 142, 15, 1);
+}
+
+.subscription-line {
+    margin: 0 auto 10px;
+    width: 90px;
+    border-bottom: 2px solid rgba(243, 142, 15, 1);
+    font-size: 12px;
+}
+
+.subscription-animals {
+    width: 100%;
+}
+
+.animals-img {
+    width: 40%;
+    height: 260px;
+    float: left;
+    text-align: left;
+    overflow: hidden;
+}
+
+.animals-img img {
+    float: left;
+}
+
+.animals-buy h1 {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    color: orange;
+}
+
+.animals-buy h2 {
+    position: relative;
+    top: -10px;
+    right: -260px;
+}
+
+.animals-buy p {
+    position: relative;
+    top: -10px;
+    right: -260px;
+}
+
+.animals-img:hover .animals-buy h2 {
+    right: -65px;
+    transition: linear 0.2s;
+}
+
+.animals-img:hover .animals-buy p {
+    right: -45px;
+    transition: linear 0.2s;
+}
+
+.animals-buy button {
+    right: -60px;
+    position: relative;
+    bottom: -260px;
+    text-align: center;
+}
+
+.animals-img:hover .animals-buy h1 {
+    top: 10px;
+    transition: linear 0.2s;
+}
+
+.animals-img:hover .animals-buy button {
+    bottom: 15px;
+    transition: linear 0.2s;
+}
+
+.animals-disc {
+    width: 60%;
+    height: 260px;
+    float: left;
+    text-align: left;
+    overflow: auto;
+}
+
+.foot {
+    width: 100%;
+    height: 200px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.foot p {
+    margin: 0;
+    padding: 0;
+}
+
+.foot p:first-child {
+    padding-top: 50px;
+}
+
+.foot p:last-child {
+    padding-top: 20px;
+}
+
+.am-popup-hd .am-popup-title {
+    color: red;
+}
+
+#decrease {
+    font-size: 1.3em;
+}
+
+#count-input {
+    width: 50px;
+    height: 21px;
+}

@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+a::before {
+    color: black;
+}
+
+a::after {
+    color: black;
+}
+
+.head {
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    /* position: fixed; */
+    color: white;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.head-table {
+    width: 100%;
+}
+
+.head-table td:first-child {
+    text-align: left;
+    width: 75%;
+}
+
+.head-table td {
+    text-align: center;
+}
+
+.body {
+    /* background-image: url("../img/bgImg1.jpg"); */
+    width: 100%;
+    height: 1087.08px;
+}
+
+.head-bgimg {
+    width: 100%;
+    height: 1087.08px;
+}
+
+.backImg {
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+    /* height: 100%; */
+    z-index: -999;
+}
+
+.backImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.previous-bgimg,
+.next-bgimg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.previous-bgimg {
+    bottom: 78%;
+    left: 100px;
+}
+
+.previous-bgimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.next-bgimg {
+    bottom: 78%;
+    right: 100px;
+}
+
+.next-bgimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    padding-top: 80px;
+}
+
+.nav-table {
+    width: 100%;
+    height: 100px;
+}
+
+.nav-table td {
+    font-family: 微软雅黑;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-table td a {
+    color: white;
+}
+
+.nav-table td a:hover {
+    color: rgb(26, 248, 111);
+}
+
+.nav-table td:hover {
+    color: rgb(53, 144, 218);
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.serch {
+    width: 20%；
+}
+
+.am-input-group {
+    width: 70%;
+}
+
+.farm-list {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1200px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    color: #0d3172;
+    font-size: 1.8em;
+}
+
+.disc {
+    margin-bottom: 0;
+}
+
+.line {
+    margin: 0 auto;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border-bottom: 2.3px solid #ffae00;
+    width: 80px;
+}
+
+.farm-disc {
+    width: 100%;
+    height: 1282px;
+}
+
+.farm-word {
+    height: 320.391px;
+    width: 60%;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* 限制行数 */
+    -webkit-line-clamp: 9;
+    overflow: hidden;
+}
+
+.farm-word h1 {
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: #eead31;
+    text-align: center;
+}
+
+.farm-img {
+    float: left;
+    height: 320.391;
+    width: 40%;
+}
+
+.farm-img img {
+    width: 100%;
+}
+
+.farm-lunbo {
+    margin-top: 40px;
+    width: 100%;
+    height: 620px;
+    background-color: lightblue;
+    background-image: url(../img/s5.jpg);
+    background-size: 100% 100%;
+}
+
+.farm-lunbo-img {
+    margin: 0 auto;
+    position: relative;
+    width: 700px;
+    height: 370px;
+    background: thistle;
+    top: 125px;
+    opacity: 0.7;
+}
+
+.func {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.func-detail {
+    width: 100%;
+}
+
+.func-detail-icon,
+.func-detail-img {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.func-detail-icon {
+    height: 420px;
+}
+
+.func-icon-table {
+    width: 100%;
+    height: 100%;
+}
+
+.func-icon {
+    width: 50%;
+    height: 33.33%;
+    text-align: center;
+}
+
+.func-icon td {
+    width: 100%;
+}
+
+.func-icon h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.func-icon table {
+    margin: 0 auto;
+    width: 49%;
+}
+
+.func-icon-img {
+    height: 100px;
+}
+
+.func-icon-img:hover {
+    transform: rotate(360deg) translateX(0);
+    background-color: green;
+    transition: linear 0.3s;
+}
+
+.func-detail-img img {
+    width: 100%;
+    height: 400px;
+}
+
+.foot {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.foot p {
+    margin: 0;
+    padding: 0;
+}
+
+.foot p:first-child {
+    padding-top: 50px;
+}
+
+.foot p:last-child {
+    padding-top: 20px;
+}
