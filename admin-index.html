@@ -9,9 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <!-- <link rel="icon" type="image/png" href="assets/i/favicon.png"> -->
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <link rel="stylesheet" href="assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="assets/css/admin.css">
 </head>
@@ -22,7 +19,9 @@
         <div class="am-topbar-brand">
             <img style="margin-left:100px;height:50px;cursor: pointer;" src="img/农牧云.png" alt="">
             <span style="margin-left:80px;cursor: pointer;">
-                <small>首页</small>
+                <small>
+                    <a href="">首页</a>
+                </small>
             </span>
             <span style="margin-left:80px;cursor: pointer;">
                 <small>云上集市</small>
@@ -59,21 +58,28 @@
                             <span class="am-icon-home"></span> 个人主页</a>
                     </li>
                     <li>
-                        <a href="admin-index.html">
+                        <a href="admin-user.html">
+                            <span class="am-icon-male"></span> 个人资料</a>
+                    </li>
+                    <li>
+                        <a href="admin-shopingCart.html">
                             <span class="am-icon-puzzle-piece"></span> 我的购物车</a>
                     </li>
                     <li>
                         <a href="admin-user.html" class="am-cf">
-                            <span class="am-icon-check"></span> 订单中心
+                            <span class="am-icon-check"></span> 我的订单
                             <!-- <span class="am-icon-star am-fr am-margin-right admin-icon-yellow"></span> -->
                         </a>
 
                     </li>
                     <li>
                         <a href="admin-table.html">
-                            <span class="am-icon-table"></span> 订购中心</a>
+                            <span class="am-icon-table"></span> 我的订购</a>
                     </li>
-
+                    <li>
+                        <a href="admin-table.html">
+                            <span class="am-icon-bullhorn"></span> 我的消息</a>
+                    </li>
                     <li>
                         <a href="#">
                             <span class="am-icon-sign-out"></span> 注销</a>
@@ -264,7 +270,7 @@
                                                 <a href="">删除</a>
                                             </td>
                                             <td>
-                                                <span>默认地址</span>
+                                                <span style="color: red">默认地址</span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -388,7 +394,7 @@
                                                     还需支付期数:
                                                 </td>
                                                 <td>
-                                                    <span>1</span>
+                                                    <span>1（共三期）</span>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -449,7 +455,7 @@
                                                     成长期数:
                                                 </td>
                                                 <td>
-                                                    <span>第二期成长</span>
+                                                    <span>第一期成长</span>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -457,7 +463,7 @@
                                                     还需支付期数:
                                                 </td>
                                                 <td>
-                                                    <span>1</span>
+                                                    <span>2（共三期）</span>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -469,15 +475,16 @@
                     </div>
                 </div>
             </div>
+            <footer class="admin-content-footer">
+                <hr>
+                <p class="am-padding-left">© 2018 搭建.</p>
+            </footer>
         </div>
-
-        <footer class="admin-content-footer">
-            <hr>
-            <p class="am-padding-left">© 2018 搭建.</p>
-        </footer>
     </div>
 
-
+    <div class="addLocation" style="display: none;width: 200px;height: 200px;color: red;position: absolute">
+        1
+    </div>
 
     <a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
 
