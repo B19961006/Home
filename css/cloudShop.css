@@ -81,6 +81,25 @@ body {
     width: 70%;
 }
 
+.dropdown {
+    height: 500px;
+    background: white;
+    float: left;
+}
+
+.buy-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right-side {
+    height: 500px;
+    background: white;
+    float: left;
+    display: none;
+}
+
 #login:hover {
     cursor: pointer;
 }
@@ -105,99 +124,6 @@ body {
     /* height: 100%; */
     box-sizing: border-box;
     float: left;
-}
-
-.classify {
-    width: 200px;
-    height: 600px;
-    box-sizing: border-box;
-    float: left;
-    /* background: aqua; */
-}
-
-.classify li {
-    display: block;
-    height: 140.5px;
-    width: 100%;
-    text-align: center;
-    line-height: 140.5px;
-    font-size: 1.6em;
-    background: rgb(33, 150, 78);
-    border-bottom: 2px solid white;
-}
-
-.classify li:last-child {
-    border: none;
-}
-
-.classify li:hover {
-    background-color: white;
-    color: orange;
-}
-
-.classify li:hover a {
-    color: rgb(26, 248, 111);
-}
-
-.classify li a {
-    color: white;
-}
-
-.classify li a::after {
-    color: white;
-}
-
-.classify li a::before {
-    color: white;
-}
-
-.classify li:hover .sub-classify {
-    display: block
-}
-
-.line {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 30px;
-    width: 0;
-    height: 50px;
-    border-bottom: 2px solid rgb(26, 248, 111);
-}
-
-.classify li:hover .line {
-    width: 140px;
-    transition: linear 0.2s;
-}
-
-.sub-classify {
-    position: relative;
-    display: none;
-    top: -80px;
-    left: 200px;
-    z-index: 900;
-}
-
-.sub-classify li {
-    background: rgb(33, 150, 78);
-    display: block;
-    height: 50px;
-    width: 100px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 16px;
-    border-bottom: 1px solid white;
-}
-
-.carousel {
-    width: 1000px;
-    height: 600px;
-    float: left;
-    box-sizing: border-box;
-}
-
-.carousel img {
-    /*width: 1000px;*/
-    height: 562px;
 }
 
 .hot-title {

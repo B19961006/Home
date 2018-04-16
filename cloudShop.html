@@ -78,25 +78,31 @@
         <div class="am-u-lg-12" style="padding: 0;">
             <div class="am-g">
                 <div class="am-g" style="position: absolute;top: 11vw;left: 15vw;">
-                    <div style="height: 500px;background:white;float: left;">
-                        <ul>
-                            <li>
-                                <a href="">全部商品</a>
-                            </li>
-                            <li>
+                    <div class="dropdown">
+                        <span>全部商品</span>
+                        <ul class="buy-list">
+
+                            <li id="left-0">
                                 <a href="">1</a>
                             </li>
-                            <li>
+                            <li id="left-1">
                                 <a href="">1</a>
                             </li>
-                            <li>
+                            <li id="left-2">
                                 <a href="">1</a>
                             </li>
                         </ul>
                     </div>
-                    <div style="height: 500px;background: white;float: left;">
+                    <div class="right-side" id="right-side-0">
                         1
                     </div>
+                    <div class="right-side" id="right-side-1">
+                        2
+                    </div>
+                    <div class="right-side" id="right-side-2">
+                        3
+                    </div>
+
                 </div>
                 <img style="width: 100%" src="img/水果.jpg" alt=" ">
             </div>
@@ -740,7 +746,7 @@
 
                             <li style="height:51.6px;line-height:50px; ">
                                 <span id="count">购买数量:
-                                    <input id="count-input" type="number" value="1 " min="0 " max="99 ">
+                                    <input id="count-input" type="number" value="1" min="0" max="99">
                                 </span>
                             </li>
                             <li style="height:51.6px;line-height:50px; ">
@@ -876,7 +882,20 @@
             $("#count-input").val(1);
             $("#total-price").html(price);
         });
+        var count = $(".buy-list li").length;
         $(() => {
+            $(".buy-list li").mouseover((resp) => {
+                let temptId = $(resp.currentTarget).attr("id");
+                console.log(count, temptId);
+                let newId = temptId.split("-");
+                for (let i = 0; i < count; i++) {
+                    $("#right-side-" + i).css("display", "none");
+
+                }
+                $("#right-side-" + newId[1]).css("display", "block");
+            });
+
+
             $("#total-price").html(price)
             $("#count-input").click(function () {
                 let totalPrice = this.value * price
@@ -946,8 +965,8 @@
                 }
                 $("#meat4").addClass("hot-goods-class");
                 $("#hot-meat-4").css("display", "block");
-            });
 
+            });
             $(".am-popup-title").css('color', "red")
         });
     </script>
