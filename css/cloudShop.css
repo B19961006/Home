@@ -2,127 +2,88 @@ body {
     margin: 0;
     width: 100%;
     font-size: 100%;
-    background: rgb(210, 210, 210);
+    /* background: rgb(210, 210, 210); */
 }
-
 
 /*导航窗*/
 
-.head-img {
-    float: left;
+.head a {
+    color: white;
+}
+
+.head {
+    width: 100%;
+    height: 35px;
+    color: white;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.nav-table {
+    width: 100%;
+    height: 120px;
+}
+
+.head {
+    position: fixed;
     height: 100px;
-}
-
-.head-imgs {
-    margin-left: 100px;
-    opacity: 1;
-    height: 100%;
-}
-
-.head-imgs:hover {
-    opacity: 1;
+    z-index: 9999;
 }
 
 .nav {
-    width: 100%;
     height: 100px;
-    background-color: black;
-    /* position: fixed; */
-    /*固定导航窗*/
-    opacity: 0.8;
-    /*设置透明度*/
+    background: none;
 }
 
-.nav-a {
-    margin-top: 2%;
-    float: left;
-    font-family: "仿宋";
-    color: white;
-    font-size: 2em;
-}
-
-.nav-a a {
-    text-decoration: none;
-}
-
-.nav-a a:link {
-    color: white;
-}
-
-.nav-a a:visited {
-    color: white;
-}
-
-.nav-a a:hover {
-    color: white;
-    text-shadow: 1px 1px 1px white;
-}
-
-.nav-ul {
-    position: relative;
-    left: 25%;
-    top: 20%;
-    color: white;
-}
-
-.nav-ul ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-menu li {
-    display: block;
-    margin-left: 40px;
-    float: left;
-}
-
-.sub-menu li {
-    margin: 0;
-    padding: 0;
-    float: none;
-}
-
-.sub-menu {
-    color: rgb(180, 180, 180);
+.nav-table td {
+    font-family: 微软雅黑;
+    cursor: pointer;
     text-align: center;
-    position: absolute;
-    left: -90000px;
 }
 
-.sub-menu a:visited {
-    color: rgb(180, 180, 180);
+.nav-table td:hover {
+    color: black(53, 144, 218);
 }
 
-.sub-menu a:hover {
-    border-bottom: 1px dashed white;
+.logo {
+    width: 30%;
 }
 
-.main-menu li:hover .sub-menu {
-    position: absolute;
-    left: auto;
+.logo span {
+    font-size: 2em;
+    font-family: 华文楷体;
+    color: rgb(240, 240, 240);
 }
 
-.nav-ul a {
-    text-decoration: none;
+.logo-img {
+    float: left;
 }
 
-.nav-ul a:link {
-    color: rgb(180, 180, 180);
+.logo-img img {
+    height: 120px;
+    padding-left: 260px;
+    margin-top: 5px;
 }
 
-.nav-ul a:visited {
-    color: rgb(180, 180, 180);
+.logo-title {
+    padding-top: 25px;
 }
 
-.nav-ul a:hover {
-    color: white;
+.title {
+    height: 80px;
+}
+
+.serch {
+    width: 20%；
+}
+
+.am-input-group {
+    width: 70%;
 }
 
 #login:hover {
     cursor: pointer;
 }
-
 
 /* body部分 */
 
@@ -135,7 +96,7 @@ body {
 .body {
     margin: 0 auto;
     width: 1200px;
-    height: 2220px;
+    /* height: 2220px; */
     box-sizing: border-box;
 }
 

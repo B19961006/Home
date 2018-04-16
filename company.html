@@ -16,8 +16,12 @@
             <table class="nav-table">
                 <tr>
                     <td class="logo">
-                        <img class="" src="img/农牧云1.png" alt="">
-                        <span>农牧云</span>
+                        <div class="logo-img">
+                            <img src="img/农牧云1.png" alt="">
+                        </div>
+                        <div class="logo-title">
+                            <img class="title" src="img/标题.png" alt="">
+                        </div>
                     </td>
                     <td>
                         <a href="">首页
@@ -60,7 +64,7 @@
                             <span class="am-input-group-btn">
                                 <button class="am-btn am-btn-default" type="button">
                                     <span class="am-icon-search"></span>
-                            </button>
+                                </button>
                             </span>
                         </div>
                     </td>
@@ -69,46 +73,11 @@
         </div>
     </div>
     <div class="am-g">
-        <div class="mp4">
-            <video width="100%" height="100%" autoplay loop="true">
+        <div class="mp4" id="changeImg">
+            <video id="vedio" width="100%" height="100%" autoplay loop="true">
                 <source src="audio/农牧云2.mp4" type="video/mp4"> 您的浏览器不支持此种视频格式。
             </video>
         </div>
-    </div>
-    <div class="am-g content">
-        <div class="am-u-lg-6"><img src="img/s1.jpg" class="am-img-responsive" alt="" /></div>
-        <div class="am-u-lg-6 discrible">
-            <span>纯天然</span>
-            <p>
-                随着营养科学研究的不断进步，人类对食品的认识逐步提高，食品不仅含有人体所需的营养物质，也含有一些有毒物质。所以在选择食品时，首先要注意食品的安全性。如今社会生存环境严重恶化，就是纯天然的水果、蔬菜也都可能残留各种农药、重金属等有毒成分，这些有毒成分不除掉，会危害健康。
-            </p>
-        </div>
-    </div>
-    <div class="am-g content">
-        <div class="am-u-lg-6 discrible">
-            <span>实时查看</span>
-            <p>
-                订购食品的成长状态实时查看，登录网页就可以看见自己的食物。即方便，又安心。
-            </p>
-        </div>
-        <div class="am-u-lg-6"><img src="img/s1.jpg" class="am-img-responsive" alt="" /></div>
-    </div>
-    <div class="am-g content">
-        <div class="am-u-lg-6"><img src="img/s1.jpg" class="am-img-responsive" alt="" /></div>
-        <div class="am-u-lg-6 discrible">
-            <span>纯天然</span>
-            <p>
-                随着营养科学研究的不断进步，人类对食品的认识逐步提高，食品不仅含有人体所需的营养物质，也含有一些有毒物质。所以在选择食品时，首先要注意食品的安全性。如今社会生存环境严重恶化，就是纯天然的水果、蔬菜也都可能残留各种农药、重金属等有毒成分，这些有毒成分不除掉，会危害健康。
-            </p>
-        </div>
-    </div>
-    <div class="am-g ">
-        <div class="other">
-            <div class="am-u-lg-4">1</div>
-            <div class="am-u-lg-4">2</div>
-            <div class="am-u-lg-4">3</div>
-        </div>
-
     </div>
     <div class="foot">
         <p>©2018 - 版权所有 </p>
@@ -116,26 +85,53 @@
             <a href="">管理登录</a>
         </p>
     </div>
+
 </body>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/amazeui.js"></script>
 <script>
-    $(window).bind("scroll", function() {
+    $(window).bind("scroll", function () {
         var top = $(this).scrollTop(); // 当前窗口的滚动距离
         // console.log($(this))
         if (top > 1) {
             $(".nav").css({
                 "background": "white",
+                "opacity": "0.8",
                 "transition": "background-color 1s"
             });
             $(".nav-table a").css("color", "black");
-            $(".company a").css("color", "black")
+            $(".company a").css("color", "black");
+            $(".logo span").css("color", "black");
+            $(".am-input-group").css("opacity", "1")
+            $(".title").attr("src", "img/标题-黑.png")
         }
         if (top == 0) {
-            $(".nav").css("background", "none");
+            $(".nav").css({
+                "background": "none",
+                "opacity": "1",
+            });
             $(".nav-table a").css("color", "rgb(220, 220, 220)");
-            $(".company a").css("color", "white")
+            $(".company a").css("color", "white");
+            $(".logo span").css("color", "white");
+            $(".am-input-group").css("opacity", "0.5")
+            $(".title").attr("src", "img/标题.png")
         }
+    });
+    var seconds = 0;
+    var changeImg = '<img src="img/景.jpg" style="width:100%;transition:2s;" alt="">';
+    $(() => {
+        function setTime() {
+            seconds++;
+            console.log(seconds)
+            if (seconds == 20) {
+                $("#vedio").css("display", "none");
+                $("#changeImg").append(changeImg)
+                clearInterval(time);
+            }
+        }
+        var time = setInterval(setTime, 1000);
+        let vedio = $("#vedio");
+        vedio.attr("loop", "");
     });
 </script>
 

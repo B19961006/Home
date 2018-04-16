@@ -16,13 +16,17 @@ a::after {
     color: black;
 }
 
+.head a {
+    color: white;
+}
+
 .head {
     width: 100%;
     height: 35px;
     background-color: black;
     /* position: fixed; */
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 35px;
 }
 
@@ -47,11 +51,11 @@ a::after {
 
 .head-bgimg {
     width: 100%;
-    height: 1087.08px;
+    /* height: 1087.08px; */
 }
 
 .backImg {
-    position: absolute;
+    position: relative;
     /* height: 100%; */
     width: 100%;
     /* height: 100%; */
@@ -63,43 +67,20 @@ a::after {
     height: 100%;
 }
 
-.previous-bgimg,
-.next-bgimg {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    background: red;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.previous-bgimg {
-    bottom: 78%;
-    left: 100px;
-}
-
-.previous-bgimg img {
-    height: 100%;
+.nav-table {
     width: 100%;
+    height: 120px;
 }
 
-.next-bgimg {
-    bottom: 78%;
-    right: 100px;
-}
-
-.next-bgimg img {
-    height: 100%;
-    width: 100%;
+.head {
+    position: fixed;
+    height: 100px;
+    z-index: 9999;
 }
 
 .nav {
-    padding-top: 80px;
-}
-
-.nav-table {
-    width: 100%;
     height: 100px;
+    background: none;
 }
 
 .nav-table td {
@@ -108,24 +89,24 @@ a::after {
     text-align: center;
 }
 
-.nav-table td a {
-    color: white;
-}
-
-.nav-table td a:hover {
-    color: rgb(26, 248, 111);
-}
-
 .nav-table td:hover {
-    color: rgb(53, 144, 218);
+    color: black(53, 144, 218);
 }
 
 .logo {
     width: 30%;
+    padding-left: 15vw;
+}
+
+.logo span {
+    font-size: 2em;
+    font-family: 华文楷体;
+    color: rgb(240, 240, 240);
 }
 
 .logo img {
     height: 100px;
+    margin-top: 15px;
 }
 
 .serch {
@@ -284,6 +265,10 @@ a::after {
     text-align: center;
     font-size: 14px;
     font-weight: normal;
+}
+
+.foot a {
+    color: white
 }
 
 .foot p {

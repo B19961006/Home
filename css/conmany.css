@@ -44,7 +44,6 @@ a::after {
 
 .logo {
     width: 30%;
-    padding-left: 15vw;
 }
 
 .logo span {
@@ -53,9 +52,22 @@ a::after {
     color: rgb(240, 240, 240);
 }
 
-.logo img {
-    height: 100px;
-    margin-top: 15px;
+.logo-img {
+    float: left;
+}
+
+.logo-img img {
+    height: 120px;
+    padding-left: 260px;
+    margin-top: 5px;
+}
+
+.logo-title {
+    padding-top: 25px;
+}
+
+.title {
+    height: 80px;
 }
 
 .serch {
@@ -106,6 +118,10 @@ a::after {
     font-size: 14px;
     font-weight: normal;
     margin-top: -6px;
+}
+
+.foot a {
+    color: rgb(39, 139, 197);
 }
 
 .foot p {
