@@ -109,6 +109,40 @@ a::after {
     margin: 0 auto;
 }
 
+.desc-list {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.desc {
+    margin-top: 20px;
+    height: 300px;
+    background-size: 100% auto;
+}
+
+.desc:first-child {
+    background-image: url("../img/牛.jpg");
+}
+
+.desc:nth-child(2) {
+    background-image: url("../img/desc1 (2).jpg");
+}
+
+.desc:last-child {
+    background-image: url("../img/desc1 (1).jpg");
+}
+
+.desc h1 {
+    font-size: 3em;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.desc p {
+    font-size: 2em;
+    margin-left: 120px;
+}
+
 .foot {
     width: 100%;
     height: 200px;

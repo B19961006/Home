@@ -56,17 +56,18 @@ body {
 }
 
 .logo-img {
-    float: left;
+    float: right;
 }
 
 .logo-img img {
     height: 120px;
-    padding-left: 260px;
+    /* padding-left: 260px; */
     margin-top: 5px;
 }
 
 .logo-title {
     padding-top: 25px;
+    float: right;
 }
 
 .title {
@@ -85,19 +86,105 @@ body {
     height: 500px;
     background: white;
     float: left;
+    opacity: 0.8;
 }
 
 .buy-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: block;
+}
+
+#left-0 {
+    width: 200px;
+    height: 60px;
+    font-size: 2.5em;
+    text-align: center;
+    background: green;
+    line-height: 60px;
+    border-bottom: 2px solid white;
+}
+
+#left-0 a {
+    color: white;
+}
+
+.left-list {
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 1.68em;
+    height: 50px;
+    /* text-align: center; */
+    border-bottom: 1px solid rgb(80, 80, 80);
+    line-height: 50px;
+}
+
+.left-list a {
+    color: rgb(80, 80, 80);
+}
+
+.left-list:hover {
+    background: green;
+    transition: background-color 0.5s;
+}
+
+.left-list:hover a {
+    color: white;
+}
+
+.am-icon-angle-right {
+    float: right;
 }
 
 .right-side {
+    border-left: 1px solid rgb(80, 80, 80);
     height: 500px;
     background: white;
     float: left;
     display: none;
+    width: 500px;
+    opacity: 0.8;
+}
+
+#right-side-0 {
+    display: block;
+}
+
+#right-side-0 h1 {
+    margin-top: 50px;
+    font-size: 3em;
+    text-align: center;
+}
+
+#right-side-0 h2 {
+    margin-top: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.foods-head h1 {
+    margin-top: 20px;
+    padding-left: 50px;
+    /* text-align: center; */
+    font-size: 2.5em;
+    color: green;
+    border-bottom: 1px solid green;
+}
+
+.foods-head h1 span {
+    padding-left: 200px;
+    font-size: 0.8em;
+}
+
+.food-name span {
+    margin: 2px 10px;
+    font-size: 1.5em;
+}
+
+.food-name span:hover {
+    color: green;
+    cursor: pointer;
 }
 
 #login:hover {
