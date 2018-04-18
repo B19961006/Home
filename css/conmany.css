@@ -53,17 +53,18 @@ a::after {
 }
 
 .logo-img {
-    float: left;
+    float: right;
 }
 
 .logo-img img {
     height: 120px;
-    padding-left: 260px;
+    /* padding-left: 260px; */
     margin-top: 5px;
 }
 
 .logo-title {
     padding-top: 25px;
+    float: right;
 }
 
 .title {
@@ -79,10 +80,6 @@ a::after {
 }
 
 .nav-table a {
-    color: rgb(220, 220, 220);
-}
-
-.company a {
     color: white;
 }
 
@@ -130,6 +127,7 @@ a::after {
 
 .desc:last-child {
     background-image: url("../img/desc1 (1).jpg");
+    margin-bottom: 20px;
 }
 
 .desc h1 {

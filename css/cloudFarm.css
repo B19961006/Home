@@ -95,7 +95,6 @@ a::after {
 
 .logo {
     width: 30%;
-    padding-left: 15vw;
 }
 
 .logo span {
@@ -104,9 +103,23 @@ a::after {
     color: rgb(240, 240, 240);
 }
 
-.logo img {
-    height: 100px;
-    margin-top: 15px;
+.logo-img {
+    float: right;
+}
+
+.logo-img img {
+    height: 120px;
+    /* padding-left: 260px; */
+    margin-top: 5px;
+}
+
+.logo-title {
+    padding-top: 25px;
+    float: right;
+}
+
+.title1 {
+    height: 80px;
 }
 
 .serch {
@@ -160,8 +173,16 @@ a::after {
     overflow: hidden;
 }
 
+.farm-word-left p {
+    padding-right: 40px;
+}
+
+.farm-word-right p {
+    padding-left: 40px;
+}
+
 .farm-word h1 {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-bottom: 0;
     color: #eead31;
     text-align: center;
@@ -247,7 +268,6 @@ a::after {
 
 .func-icon-img:hover {
     transform: rotate(360deg) translateX(0);
-    background-color: green;
     transition: linear 0.3s;
 }
 

@@ -4,7 +4,7 @@
 }
 
 .head {
-    background: black;
+    background: white;
     /* position: fixed; */
     height: 100px;
     z-index: 9999;
@@ -12,7 +12,7 @@
 
 .head a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .nav {
@@ -26,6 +26,10 @@
     text-align: center;
 }
 
+.nav-table td:not(1) {
+    width: 10vw;
+}
+
 .nav-table td:hover {
     color: black(53, 144, 218);
 }
@@ -34,24 +38,19 @@
     width: 30%;
 }
 
-.logo span {
-    font-size: 2em;
-    font-family: 华文楷体;
-    color: rgb(240, 240, 240);
-}
-
 .logo-img {
-    float: left;
+    float: right;
 }
 
 .logo-img img {
     height: 120px;
-    padding-left: 260px;
+    /* padding-left: 260px; */
     margin-top: 5px;
 }
 
 .logo-title {
     padding-top: 25px;
+    float: right;
 }
 
 .title {

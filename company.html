@@ -16,11 +16,11 @@
             <table class="nav-table">
                 <tr>
                     <td class="logo">
-                        <div class="logo-img">
-                            <img src="img/农牧云1.png" alt="">
-                        </div>
                         <div class="logo-title">
                             <img class="title" src="img/标题.png" alt="">
+                        </div>
+                        <div class="logo-img">
+                            <img src="img/农牧云1.png" alt="">
                         </div>
                     </td>
                     <td>
@@ -60,11 +60,11 @@
                     </td>
                     <td class="serch">
                         <div class="am-input-group">
-                            <input type="text" class="am-form-field">
+                            <input type="text" class="am-form-field" style="border-top-left-radius: 15px;border-bottom-left-radius: 15px;">
                             <span class="am-input-group-btn">
-                                <button class="am-btn am-btn-default" type="button">
+                                <button class="am-btn am-btn-default" type="button" style="border-bottom-right-radius: 15px;border-top-right-radius: 15px;">
                                     <span class="am-icon-search"></span>
-                                </button>
+                            </button>
                             </span>
                         </div>
                     </td>
@@ -104,7 +104,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/amazeui.js"></script>
 <script>
-    $(window).bind("scroll", function () {
+    $(window).bind("scroll", function() {
         var top = $(this).scrollTop(); // 当前窗口的滚动距离
         // console.log($(this))
         if (top > 1) {
@@ -124,7 +124,7 @@
                 "background": "none",
                 "opacity": "1",
             });
-            $(".nav-table a").css("color", "rgb(220, 220, 220)");
+            $(".nav-table a").css("color", "white");
             $(".company a").css("color", "white");
             $(".logo span").css("color", "white");
             $(".am-input-group").css("opacity", "0.5")

@@ -5,6 +5,7 @@ body {
     /* background: rgb(210, 210, 210); */
 }
 
+
 /*导航窗*/
 
 .head a {
@@ -83,7 +84,7 @@ body {
 }
 
 .dropdown {
-    height: 500px;
+    height: 470px;
     background: white;
     float: left;
     opacity: 0.8;
@@ -139,7 +140,7 @@ body {
 
 .right-side {
     border-left: 1px solid rgb(80, 80, 80);
-    height: 500px;
+    height: 470px;
     background: white;
     float: left;
     display: none;
@@ -147,9 +148,19 @@ body {
     opacity: 0.8;
 }
 
-#right-side-0 {
+.right-side-carousel {
+    opacity: 1;
+    background: unset;
     display: block;
+    width: 800px;
+    /* background: red; */
+    overflow: hidden;
 }
+
+
+/* #right-side-0 {
+    display: block;
+} */
 
 #right-side-0 h1 {
     margin-top: 50px;
@@ -190,6 +201,7 @@ body {
 #login:hover {
     cursor: pointer;
 }
+
 
 /* body部分 */
 
@@ -241,31 +253,77 @@ body {
 }
 
 .hot-goods-img li {
+    margin-right: 75px;
+    display: block;
     float: left;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.hot-goods-img li:nth-child(4n+0) {
+    margin-right: 0;
+}
+
+.goods-li {
+    width: 240px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.goods-imgs {
+    width: 240px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.goods-price {
+    font-size: 2.5em;
+    color: red;
+}
+
+
+/* 包邮 */
+
+.express-delivery {
+    background: red;
+    color: white;
+    margin-left: 5px;
+}
+
+.goods-desc {
+    margin: 0;
+}
+
+.goods-name {
+    color: red;
+}
+
+.sales-volume {
+    font-size: 1.5em;
+    color: rgb(80, 80, 80);
+    margin-top: 13px;
+    float: right;
+    ;
 }
 
 .hot-goods-img :first-child {
     margin-left: 3px;
 }
 
-.hot-goods-img span {
-    margin: 3px;
-}
 
-.hot-goods-img span:last-child {
+/* .hot-goods-img span:last-child {
     color: red;
     font-size: 1.4em;
     font-family: 仿宋;
-}
+} */
 
-.hot-goods-img span:last-child:hover {
+
+/* .hot-goods-img span:last-child:hover {
     background: red;
     color: white;
     font-size: 1.4em;
     font-family: 仿宋;
     cursor: pointer;
-}
+} */
 
 .hot-goods-class {
     font-family: 楷体;
@@ -276,6 +334,7 @@ body {
 
 .kinds td:hover {
     cursor: pointer;
+    background: rgb(240, 240, 240);
 }
 
 .hot-goods p:first-child {
@@ -287,13 +346,7 @@ body {
     margin-bottom: 5px;
     display: block;
     width: 100%;
-    text-align: center;
-}
-
-.hot-goods-img span {
-    display: block;
-    width: 291px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .hot-goods-img img {
