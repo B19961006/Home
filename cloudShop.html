@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <img style="width: 100%" src="img/水果.jpg" alt=" ">
+                <img id="big-img" style="width: 100%" src="img/水果.jpg" alt=" ">
             </div>
 
         </div>
@@ -1027,6 +1027,10 @@
                 $(".title").attr("src", "img/标题.png")
             }
         });
+        $("#big-img").mouseover(() => {
+            $(".right-side").css("display", "none");
+            $(".right-side-carousel").css("display", "block");
+        });
         var price = $("#price").text();
         $("#add-cart").click(function() {
             alert("成功加入购物车");
@@ -1036,6 +1040,7 @@
         var count = $(".buy-list li").length;
         $(() => {
             $(".buy-list li").mouseover((resp) => {
+
                 $(".right-side-carousel").css("display", "none");
                 let temptId = $(resp.currentTarget).attr("id");
                 let newId = temptId.split("-");
@@ -1044,11 +1049,6 @@
                 }
                 $("#right-side-" + newId[1]).css("display", "block");
             });
-
-            // $(".dropdown-nav").mouseout(() => {
-            //     $(".right-side-carousel").show();
-            // });
-
             $("#total-price").html(price)
             $("#count-input").click(function() {
                 let totalPrice = this.value * price
