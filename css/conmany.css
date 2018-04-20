@@ -118,7 +118,7 @@ a::after {
 }
 
 .desc:first-child {
-    background-image: url("../img/牛.jpg");
+    background-image: url("../img/天空.png");
 }
 
 .desc:nth-child(2) {
