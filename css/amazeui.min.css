@@ -9942,9 +9942,9 @@ ul.am-dropdown-content>.am-disabled>a:hover {
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
     width: 100%;
-    color: #333;
+    color: #fff;
     content: "\f137";
-    font-size: 24px!important;
+    font-size: 36px!important;
     text-align: center;
     line-height: 36px!important;
     height: 36px
