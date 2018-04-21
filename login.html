@@ -1,65 +1,209 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Login Page | Amaze UI Example</title>
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/login-animate.css">
+    <link rel="stylesheet" href="css/login-bootstrap.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="css/login-style.css">
     <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
     <style>
-        .header {
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 200%;
-            color: #333;
-            margin-top: 30px;
-        }
-
-        .header p {
-            font-size: 14px;
+        .head a {
+            color: white
         }
     </style>
 </head>
 
 <body>
-    <div class="header">
-        <div class="am-g">
-            <h1>Wellcome</h1>
-            <p>农牧云
-                <br/>最新鲜最健康的食品为你服务</p>
+
+
+    <div class="am-g head" style="background: none;color: white;position: fixed;">
+        <div class="nav">
+            <table class="nav-table">
+                <tr>
+                    <td class="logo">
+                        <div class="logo-title">
+                            <img class="title" src="img/标题.png" alt="">
+                        </div>
+                        <div class="logo-img">
+                            <img src="img/农牧云1.png" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <a href="">首页
+                            <br>
+                            <span>Home&nbsp; Page</span>
+                        </a>
+
+                    </td>
+                    <td>
+                        <a href="">
+                            云上集市
+                            <br>
+                            <span>Cloud&nbsp;Shop</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            云上农场
+                            <br>
+                            <span>Cloud&nbsp;Farm</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href=""> 个人中心
+                            <br>
+                            <span>Personal&nbsp;Center</span>
+                        </a>
+
+                    </td>
+                    <td class="company">
+                        <a href="">
+                            关于我们
+                            <br>
+                            <span>About&nbsp;Us</span>
+                        </a>
+                    </td>
+                    <td class="serch">
+                        <div class="am-input-group">
+                            <input type="text" class="am-form-field" style="border-top-left-radius: 15px;border-bottom-left-radius: 15px;">
+                            <span class="am-input-group-btn">
+                                <button class="am-btn am-btn-default" type="button" style="border-bottom-right-radius: 15px;border-top-right-radius: 15px;">
+                                    <span class="am-icon-search"></span>
+                            </button>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <hr />
     </div>
-    <div class="am-g">
-        <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-            <h3 style="text-align:center">登录</h3>
+    <header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(img/1.jpg)">
+        <div class="overlay"></div>
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-left">
+                    <div class="row row-mt-15em">
+                        <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+                            <span class="intro-text-small">Welcome to 农牧云
+                                <br>
+                                <br>
+                            </span>
+                            <h1>绿色 共享 扶贫
+                                <br> </h1>
+                        </div>
+                        <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                            <div class="form-wrap">
+                                <div class="tab">
+                                    <ul class="tab-menu">
+                                        <li class="active gtco-first">
+                                            <a href="#" data-tab="signup">注册</a>
+                                        </li>
+                                        <li class="gtco-second">
+                                            <a href="#" data-tab="login">登录</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-content-inner active" data-content="signup">
+                                            <form action="#">
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <label for="username">注册账号名</label>
+                                                        <input type="text" class="form-control" id="username">
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <label for="password">密码</label>
+                                                        <input type="password" class="form-control" id="password">
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <label for="password2">确认密码</label>
+                                                        <input type="password" class="form-control" id="password2">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <input type="submit" class="btn btn-primary" value="注册">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="tab-content-inner" data-content="login">
+                                            <form action="#">
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <label for="username">账号</label>
+                                                        <input type="text" class="form-control" id="username">
+                                                    </div>
+                                                </div>
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <label for="password">密码</label>
+                                                        <input type="password" class="form-control" id="password">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row form-group">
+                                                    <div class="col-md-12">
+                                                        <input type="submit" class="btn btn-primary" value="登录">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-            <form method="post" class="am-form">
-                <label for="email">账号:</label>
-                <input type="email" name="" id="email" value="">
-                <br>
-                <label for="password">密码:</label>
-                <input type="password" name="" id="password" value="">
-                <br>
-                <label for="remember-me">
-                    <input id="remember-me" type="checkbox"> 记住密码
-                </label>
-                <br />
-                <div class="am-cf">
-                    <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
-                    <input type="submit" name="" value="忘记密码 ^_^? " class="am-btn am-btn-default am-btn-sm am-fr">
                 </div>
-            </form>
-            <hr>
+            </div>
         </div>
-    </div>
+    </header>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

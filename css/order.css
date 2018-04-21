@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    overflow: auto;
+}
+
+.nav {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav table {
+    width: 100%;
+}
+
+.body-head {
+    background: rgb(28, 105, 28);
+}
+
+.main-nav {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.info {
+    background: rgb(34, 132, 150);
+}
+
+.inf-table {
+    width: 900px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.inf-table th {
+    width: 33.33%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.logo {
+    width: 20vm;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.title {
+    font-size: 1.6em;
+    font-family: 华文楷体;
+}
+
+.shopCart {
+    padding-left: 50px;
+}
+
+.shopCart-span {
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+.detail {
+    width: 1200px;
+    margin: 30px auto 0;
+}
+
+.foot {
+    width: 100%;
+    height: 200px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -6px;
+}
+
+.am-list li {
+    height: 47px;
+    line-height: 47px;
+}
+
+.desc {
+    width: 1200px;
+    margin: 20 auto;
+}
+
+.goods-nav {
+    list-style: none;
+}
+
+.goods-nav li {
+    float: left;
+    display: block;
+    width: 200px;
+    /* height: 40px; */
+    line-height: 40px;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.goods-nav li:first-child {
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+.goods-nav li:hover {
+    color: green;
+    border-bottom: 2px solid green;
+    /* transition: border-bottom 0.5s; */
+}
+
+.goods-info div {
+    margin-left: 20px;
+    width: 100%;
+    /* background: rgb(180, 180, 180) */
+}
+
+.desc-img img {
+    margin-left: 20px;
+    width: 97%;
+}
+
+.desc-img p {
+    margin-left: 2px;
+}
+
+.desc-p {
+    /* width: 103%; */
+    margin: 0;
+    background: green;
+    color: white
+}
+
+.desc-p span {
+    margin-left: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.goods-detail-li {
+    margin-left: 20px;
+    background: rgb(180, 180, 180);
+}
+
+.goods-detail {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.detail-left {
+    margin-left: 20px;
+    float: left;
+}
+
+.detail-left img {
+    width: 100%;
+}
+
+.detail-left h1 {
+    margin: 0;
+    color: green;
+}
+
+.detail-right {
+    float: left;
+}
+
+.detail-right img {
+    width: 49%;
+}
+
+.detail-right h1 {
+    margin: 0;
+    color: green;
+}
+
+.foot p {
+    margin: 0;
+    padding: 0;
+}
+
+.foot p:first-child {
+    padding-top: 50px;
+}
+
+.foot p:last-child {
+    padding-top: 20px;
+}
