@@ -16,13 +16,15 @@ a::after {
     color: black;
 }
 
+/* 导航栏 */
+
 .nav-table {
     width: 100%;
     height: 120px;
 }
 
 .head {
-    position: fixed;
+    /* position: fixed; */
     height: 100px;
     z-index: 9999;
 }
@@ -77,4 +79,62 @@ a::after {
 
 .am-input-group {
     width: 70%;
+}
+
+/* 评论区CSS */
+
+.remark {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.remark-table {
+    width: 100%;
+    background: lightblue;
+    margin-bottom: 10px;
+}
+
+.remark-desc {
+    width: 50%;
+}
+
+.remark-date {
+    width: 150px;
+    height: 150px;
+    background: lawngreen;
+}
+
+.remark-date h1,
+h2,
+p {
+    text-align: center;
+    margin: 0;
+}
+
+.remark-date h1 {
+    font-size: 3em;
+}
+
+.remark-article p {
+    margin: 0;
+    margin-left: 5px;
+    text-align: initial;
+}
+
+.remark-auther {
+    /* position: absolute; */
+}
+
+.remark-img {
+    width: 50%;
+    height: 200px;
+}
+
+.remark-img img {
+    height: 100%;
+}
+
+.remark-img img:hover {
+    transform: scale(1.4);
+    transition: all 0.6s;
 }

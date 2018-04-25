@@ -29,10 +29,81 @@
     <link rel="stylesheet" href="assets/css/admin.css">
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
-    <link rel="stylesheet" href="css/nav.css">
+
     <style>
         .head a {
             color: white
+        }
+
+        body {
+            overflow: scroll;
+        }
+
+        .nav-table {
+            width: 100%;
+            height: 120px;
+        }
+
+        .head {
+            position: fixed;
+            height: 100px;
+            z-index: 9999;
+        }
+
+        .nav {
+            height: 100px;
+            background: none;
+        }
+
+        .nav-table td {
+            font-family: 微软雅黑;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .nav-table td:hover {
+            color: black(53, 144, 218);
+        }
+
+        .logo {
+            width: 30%;
+        }
+
+        .logo span {
+            font-size: 2em;
+            font-family: 华文楷体;
+            color: rgb(240, 240, 240);
+        }
+
+        .logo-img {
+            float: right;
+        }
+
+        .logo-img img {
+            height: 120px;
+            /* padding-left: 260px; */
+            margin-top: 5px;
+        }
+
+        .logo-title {
+            padding-top: 25px;
+            float: right;
+        }
+
+        .title {
+            height: 80px;
+        }
+
+        .serch {
+            width: 20%；
+        }
+
+        .am-input-group {
+            width: 70%;
+        }
+
+        .nav-table a {
+            color: white;
         }
     </style>
 </head>
@@ -93,7 +164,7 @@
                             <span class="am-input-group-btn">
                                 <button class="am-btn am-btn-default" type="button" style="border-bottom-right-radius: 15px;border-top-right-radius: 15px;">
                                     <span class="am-icon-search"></span>
-                            </button>
+                                </button>
                             </span>
                         </div>
                     </td>
@@ -194,7 +265,6 @@
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
     <!-- Waypoints -->
     <script src="js/jquery.waypoints.min.js"></script>
     <!-- Carousel -->
@@ -204,6 +274,45 @@
     <!-- Main -->
     <script src="js/main.js"></script>
 
+    <script>
+        $(() => {
+            var height = $(window).innerHeight();
+            console.log(height);
+            $(window).bind("scroll", function () {
+                var top = $(this).scrollTop(); // 当前窗口的滚动距离
+                console.log(top)
+            });
+        });
+        $(window).bind("scroll", function () {
+            var top = $(this).scrollTop(); // 当前窗口的滚动距离
+            console.log(top)
+            console.log(1)
+            alert(11)
+            if (top > 1) {
+                $(".nav").css({
+                    "background": "white",
+                    "opacity": "0.8",
+                    "transition": "background-color 1s"
+                });
+                $(".nav-table a").css("color", "black");
+                $(".company a").css("color", "black");
+                $(".logo span").css("color", "black");
+                $(".am-input-group").css("opacity", "1")
+                $(".title").attr("src", "img/标题-黑.png")
+            }
+            if (top == 0) {
+                $(".nav").css({
+                    "background": "none",
+                    "opacity": "1",
+                });
+                $(".nav-table a").css("color", "white");
+                $(".company a").css("color", "white");
+                $(".logo span").css("color", "white");
+                $(".am-input-group").css("opacity", "0.5")
+                $(".title").attr("src", "img/标题.png")
+            }
+        });
+    </script>
 </body>
 
 </html>
