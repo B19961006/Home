@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="assets/css/admin.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/order-detail.css">
     <title>Document</title>
 </head>
 
@@ -18,16 +18,16 @@
                 <tr>
                     <td class="logo">
                         <div class="logo-title">
-                            <img class="title" src="img/标题.png" alt="">
+                            <img class="title" src="img/标题-黑.png" alt="">
                         </div>
                         <div class="logo-img">
-                            <img src="img/农牧云1.png" alt="">
+                            <img src="img/农牧云3.png" alt="">
                         </div>
                     </td>
                     <td>
                         <a href="">首页
                             <br>
-                            <span>Home&nbsp; Page</span>
+                            <span>Home&nbsp;Page</span>
                         </a>
 
                     </td>
@@ -71,7 +71,7 @@
                             <span class="am-input-group-btn">
                                 <button class="am-btn am-btn-default" type="button" style="border-bottom-right-radius: 15px;border-top-right-radius: 15px;">
                                     <span class="am-icon-search"></span>
-                            </button>
+                                </button>
                             </span>
                         </div>
                     </td>
@@ -79,7 +79,37 @@
             </table>
         </div>
     </div>
-
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/amazeui.js"></script>
+    <script>
+        $(window).bind("scroll", function () {
+            var top = $(this).scrollTop(); // 当前窗口的滚动距离
+            // console.log($(this))
+            if (top > 1) {
+                $(".nav").css({
+                    "background": "white",
+                    "opacity": "0.8",
+                    "transition": "background-color 1s"
+                });
+                $(".nav-table a").css("color", "black");
+                $(".company a").css("color", "black");
+                $(".logo span").css("color", "black");
+                $(".am-input-group").css("opacity", "1")
+                $(".title").attr("src", "img/标题-黑.png")
+            }
+            if (top == 0) {
+                $(".nav").css({
+                    "background": "none",
+                    "opacity": "1",
+                });
+                $(".nav-table a").css("color", "white");
+                $(".company a").css("color", "white");
+                $(".logo span").css("color", "white");
+                $(".am-input-group").css("opacity", "0.5")
+                $(".title").attr("src", "img/标题.png")
+            }
+        });
+    </script>
 </body>
 
 </html>

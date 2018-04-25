@@ -74,7 +74,7 @@
                             <span class="am-input-group-btn">
                                 <button class="am-btn am-btn-default" type="button" style="border-bottom-right-radius: 15px;border-top-right-radius: 15px;">
                                     <span class="am-icon-search"></span>
-                            </button>
+                                </button>
                             </span>
                         </div>
                     </td>
@@ -253,16 +253,20 @@
                                         <span style="color: rgb(180, 180, 180);margin-left:10px; ">在线支付</span>
                                     </td>
                                     <td style="padding-top: 80px;padding-left: 10px;">
-                                        <span style="color: rgb(180, 180, 180)">第二期成长中</span>
+                                        <span style="font-weight: bold;">第二期成长中</span>
                                         <br>
                                         <span>
                                             <i class="am-icon-sellsy"></i>
                                             <span style="color: red;font-size: 0.7em;">+110经验</span>
                                         </span>
                                         <br>
+                                        <span>代售
+                                            <span style="color: red">￥10</span>
+                                        </span>
+                                        <br>
                                     </td>
                                     <td style="padding-top: 80px;padding-left: 10px;">
-                                        <button type="button" class="am-btn am-btn-primary" style="margin-bottom: 2px;">订单详情</button>
+                                        <button type="button" class="am-btn am-btn-primary" style="margin-bottom: 2px;">成长详情</button>
                                         <br>
                                         <button type="button" class="am-btn am-btn-secondary" style="margin-bottom: 2px;">再次购买</button>
                                         <br>
@@ -288,7 +292,7 @@
             var count
             $(() => {
                 count = $(".am-nav-tabs li").length
-                    // console.log(count)
+                // console.log(count)
             });
             $(".am-nav-tabs li").click((res) => {
                 let tempId = $(res.currentTarget).attr("id");
