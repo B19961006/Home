@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/admin.css">
     <link rel="stylesheet" href="css/order.css">
     <title>Document</title>
-
 </head>
 
 <body>
@@ -20,7 +19,6 @@
                     <img src="img/农牧云3.png" alt="">
                     <span class="title">农牧云</span>
                 </th>
-
                 <th class="farm">
                     <span>四川优质牧场</span>
                 </th>
@@ -31,7 +29,7 @@
                         <span class="am-input-group-btn">
                             <button class="am-btn am-btn-danger" type="button">
                                 <span class="am-icon-search">搜索本牧场</span>
-                        </button>
+                            </button>
                         </span>
                     </div>
                 </th>
@@ -117,6 +115,7 @@
                     <li>
                         <span>总共期数:</span>
                         <span style="margin-left: 10px;color: red;font-size: 1.2em;">3期</span>
+                        <span style="color: rgb(180, 180, 180)">（每期为20天）</span>
                     </li>
                     <li>
                         <span>
@@ -142,7 +141,7 @@
                         <span>
                             <strong>总价:
                                 <span id="total-price" style="margin-left: 40px;color: red;font-size: 1.5em;">35</span>
-                        </strong>
+                            </strong>
                         </span>
                     </li>
                     <li>
@@ -182,7 +181,8 @@
                     <img src="img/desc1 (2).jpg" alt="">
 
                 </div>
-                <p class="desc-p"><span>草原牛</span>至今一直保持着自由放牧的饲养方式。研究表明，在自由放牧条件下的牛因其摄食的牧草而使其肌肉的抗氧化能力高于舍饲的牛羊。在自由放牧条件下，动物可以从牧草中摄入较多的维生素类（A、C、E等）、多不饱和脂肪酸以及具有抗氧化能力的矿物质等。放牧的牛羊能够自由活动，适宜的运动量能增加肌肉中抗氧化酶的活力，使得自由基的产生和清除达到平衡。</p>
+                <p class="desc-p">
+                    <span>草原牛</span>至今一直保持着自由放牧的饲养方式。研究表明，在自由放牧条件下的牛因其摄食的牧草而使其肌肉的抗氧化能力高于舍饲的牛羊。在自由放牧条件下，动物可以从牧草中摄入较多的维生素类（A、C、E等）、多不饱和脂肪酸以及具有抗氧化能力的矿物质等。放牧的牛羊能够自由活动，适宜的运动量能增加肌肉中抗氧化酶的活力，使得自由基的产生和清除达到平衡。</p>
 
             </div>
         </div>
@@ -215,7 +215,7 @@
     <script src="assets/js/app.js "></script>
     <script>
         var price = $("#price").text();
-        $("#add-cart").click(function() {
+        $("#add-cart").click(function () {
             alert("成功加入购物车");
             $("#count-input").val(1);
             $("#total-price").html(price);

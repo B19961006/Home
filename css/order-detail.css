@@ -100,6 +100,19 @@ a::after {
     border: 1px solid rgb(220, 220, 220);
 }
 
+/* 评论 */
+
+.remark-list {
+    margin-bottom: 10px;
+}
+
+.remark-list span {
+    font-size: 2em;
+    color: orange;
+    padding-bottom: 5px;
+    border-bottom: 2px solid orange;
+}
+
 .remark {
     width: 1200px;
     margin: 0 auto;
@@ -107,7 +120,7 @@ a::after {
 
 .remark-table {
     width: 100%;
-    background: lightblue;
+    background: rgb(136, 251, 171);
     margin-bottom: 10px;
 }
 
@@ -118,7 +131,7 @@ a::after {
 .remark-date {
     width: 150px;
     height: 150px;
-    background: lawngreen;
+    background: rgb(96, 209, 86);
 }
 
 .remark-date h1,

@@ -18,7 +18,7 @@ body {
 }
 
 .body-head {
-    background: rgb(28, 105, 28);
+    background: rgb(5, 5, 5);
 }
 
 .main-nav {
@@ -182,6 +182,10 @@ body {
 .detail-right h1 {
     margin: 0;
     color: green;
+}
+
+.editor {
+    float: right;
 }
 
 .foot p {

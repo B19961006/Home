@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.body-head {
+    width: 100%;
+    background: url(../img/company1.jpg)no-repeat;
+    background-size: cover;
+}
+
+.company-name {
+    margin-top: 100px;
+}
+
+.name {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.name img {
+    height: 200px;
+}
+
+.name span {
+    font-size: 5em;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.banner {
+    width: 80%;
+    margin: 0 auto;
+    /* background: red; */
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+}
+
+.prev,
+.right {
+    width: 10%;
+}
+
+.prev,
+.right img {
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.prev img {
+    float: right;
+    margin-right: 10px;
+}
+
+.right img {
+    margin-left: 10px;
+}
+
+.content {
+    width: 80%;
+    float: left;
+    overflow: hidden;
+}
+
+.prev {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.swiper {
+    margin-top: 120px;
+}
+
+.swiper ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 300%;
+}
+
+.swiper li {
+    display: block;
+    width: 33.33%;
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+
+.swiper li a {
+    color: white;
+    font-size: 4em;
+    font-family: 'Dancing Script', cursive;
+}
