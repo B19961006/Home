@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    color: #333;
+    text-align: center;
+    font: 12px "微软雅黑";
+    /* background-color: #dcf5ed; */
+    background-image: url(../img/famileTravel.jpg);
+    background-size: cover;
+}
+
+/* head */
+
+.nav-table {
+    width: 100%;
+    height: 120px;
+}
+
+.head {
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    z-index: 9999;
+}
+
+.nav {
+    height: 100px;
+    background: none;
+}
+
+.nav-table td {
+    font-family: 微软雅黑;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-table td:hover {
+    color: black(53, 144, 218);
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo span {
+    font-size: 2em;
+    font-family: 华文楷体;
+    color: rgb(240, 240, 240);
+}
+
+.logo-img {
+    float: right;
+}
+
+.logo-img img {
+    height: 120px;
+    /* padding-left: 260px; */
+    margin-top: 5px;
+}
+
+.logo-title {
+    padding-top: 25px;
+    float: right;
+}
+
+.title {
+    height: 80px;
+}
+
+.serch {
+    width: 20%；
+}
+
+.am-input-group {
+    width: 70%;
+}
+
+.nav-table a {
+    font-size: 16px;
+    color: white;
+}
+
+/* end head */
+
+.mapTipText {
+    width: 280px;
+    height: 110px;
+    background-color: #ffffff;
+}
+
+.mapTipText .mapTipImg {
+    height: 66px;
+    width: 66px;
+    float: left;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -12px 5px 0 -12px;
+}
+
+.mapTipText .mapTipImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.mapTipText .mapTipList {
+    float: left;
+    margin-left: 4px;
+}
+
+.mapTipText .mapTipList ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mapTipText .mapTipList h2 {
+    text-align: left;
+    margin: 0;
+}
+
+.mapTipText .mapTipList h2 a {
+    font-size: 24px;
+    color: #262626;
+    text-decoration: none;
+}
+
+.mapTipText .mapTipList h2 a:hover {
+    color: #0085d2;
+}
+
+.mapTipText .mapTipList h2 a span {
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.mapTipText .mapTipList ul {
+    width: 203px;
+    padding-right: 10px;
+}
+
+.mapTipText .mapTipList ul li {
+    list-style: none;
+    float: left;
+    padding: 7px 3px 0 3px;
+}
+
+.mapTipText .mapTipList ul li a {
+    color: #262626;
+    text-decoration: none;
+}
+
+.mapTipText .mapTipList ul li a:hover {
+    background-color: #2ebcfe;
+    color: #ffffff;
+}
+
+.itemCon {
+    float: left
+}
+
+#ChinaMap {
+    margin: 150px auto;
+}
+
+#stateTip {
+    position: absolute;
+    left: 100%;
+    text-align: left;
+    display: inline;
+}
+
+#mapTipContent {
+    width: 900px;
+    margin: 0 auto;
+    display: none;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}

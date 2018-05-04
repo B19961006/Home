@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>云游天下</title>
+	<link rel="stylesheet" href="assets/css/amazeui.css">
+	<link rel="stylesheet" href="css/clouldTravel.css">
+	<script src="js/map-js/lib/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/map-js/lib/raphael-min.js"></script>
+	<script type="text/javascript" src="js/map-js/res/chinaMapConfig.js"></script>
+	<script type="text/javascript" src="js/map-js/map-min.js"></script>
+</head>
+
+<body>
+	<div class="head">
+		<div class="nav">
+			<table class="nav-table">
+				<tr>
+					<td class="logo">
+						<div class="logo-title">
+							<img class="title" src="img/标题.png" alt="">
+						</div>
+						<div class="logo-img">
+							<img src="img/农牧云3.png" alt="">
+						</div>
+					</td>
+					<td>
+						<a href="">首页
+							<br>
+							<span>Home&nbsp;Page</span>
+						</a>
+
+					</td>
+					<td>
+						<a href="">
+							云上集市
+							<br>
+							<span>Cloud&nbsp;Shop</span>
+						</a>
+					</td>
+					<td>
+						<a href="">
+							云上农场
+							<br>
+							<span>Cloud&nbsp;Farm</span>
+						</a>
+					</td>
+					<td>
+						<a href="">云游天下
+							<br>
+							<span>Travel&nbsp;world</span>
+						</a>
+					</td>
+					<td>
+						<a href=""> 个人中心
+							<br>
+							<span>Personal&nbsp;Center</span>
+						</a>
+
+					</td>
+					<td class="company">
+						<a href="">
+							关于我们
+							<br>
+							<span>About&nbsp;Us</span>
+						</a>
+					</td>
+					<td class="serch">
+						<div class="am-input-group">
+							<input type="text" class="am-form-field" style="border-top-left-radius: 15px;border-bottom-left-radius: 15px;">
+							<span class="am-input-group-btn">
+								<button class="am-btn am-btn-default" type="button" style="border-bottom-right-radius: 15px;border-top-right-radius: 15px;">
+									<span class="am-icon-search"></span>
+								</button>
+							</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="am-g wrap">
+		<div class="itemCon">
+			<div id="ChinaMap"></div>
+			<div id="stateTip"></div>
+		</div>
+
+		<div id="mapTipContent">
+			<div class="mapTipText mapTipText0">
+				<div class="mapTipImg">
+					<img src="img/heilongjiang.jpg" alt="" />
+				</div>
+				<div class="mapTipList">
+					<h2>
+						<a href="">黑龙江
+							<span>Heilongjiang</span>
+						</a>
+					</h2>
+					<ul>
+						<li>
+							<a href="">哈尔滨</a>
+						</li>
+						<li>
+							<a href="">漠河</a>
+						</li>
+						<li>
+							<a href="">五大连池</a>
+						</li>
+						<li>
+							<a href="">兴凯湖</a>
+						</li>
+						<li>
+							<a href="">雪乡</a>
+						</li>
+						<li>
+							<a href="">大兴安岭</a>
+						</li>
+						<li>
+							<a href="">齐齐哈尔</a>
+						</li>
+						<li>
+							<a href="">牡丹江</a>
+						</li>
+						<li>
+							<a href="">伊春</a>
+						</li>
+						<li>
+							<a href="">大庆</a>
+						</li>
+						<li>
+							<a href="">镜泊湖</a>
+						</li>
+						<li>
+							<a href="">帽儿山</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mapTipText mapTipText1">
+				<div class="mapTipImg">
+					<img src="img/jilin.jpg" alt="" />
+				</div>
+				<div class="mapTipList">
+					<h2>
+						<a href="">吉林
+							<span>Jilin</span>
+						</a>
+					</h2>
+					<ul>
+						<li>
+							<a href="">长白山</a>
+						</li>
+						<li>
+							<a href="">长春</a>
+						</li>
+						<li>
+							<a href="">延吉</a>
+						</li>
+						<li>
+							<a href="">雾凇岛</a>
+						</li>
+						<li>
+							<a href="">集安</a>
+						</li>
+						<li>
+							<a href="">吉林市</a>
+						</li>
+						<li>
+							<a href="">查干湖</a>
+						</li>
+						<li>
+							<a href="">三角龙湾</a>
+						</li>
+						<li>
+							<a href="">通化</a>
+						</li>
+						<li>
+							<a href="">四平</a>
+						</li>
+						<li>
+							<a href="">松原</a>
+						</li>
+						<li>
+							<a href="">白城</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mapTipText mapTipText2">
+				<div class="mapTipImg">
+					<img src="img/liaoning.jpg" alt="" />
+				</div>
+				<div class="mapTipList">
+					<h2>
+						<a href="">辽宁
+							<span>Liaoning</span>
+						</a>
+					</h2>
+					<ul>
+						<li>
+							<a href="">大连</a>
+						</li>
+						<li>
+							<a href="">丹东</a>
+						</li>
+						<li>
+							<a href="">沈阳</a>
+						</li>
+						<li>
+							<a href="">兴城</a>
+						</li>
+						<li>
+							<a href="">葫芦岛</a>
+						</li>
+						<li>
+							<a href="">绥中</a>
+						</li>
+						<li>
+							<a href="">旅顺</a>
+						</li>
+						<li>
+							<a href="">锦州</a>
+						</li>
+						<li>
+							<a href="">抚顺</a>
+						</li>
+						<li>
+							<a href="">鞍山</a>
+						</li>
+						<li>
+							<a href="">本溪</a>
+						</li>
+						<li>
+							<a href="">营口</a>
+						</li>
+						<li>
+							<a href="">盘锦</a>
+						</li>
+						<li>
+							<a href="">长兴岛</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mapTipText mapTipText17" style="height: 220px;">
+				<div class="mapTipImg">
+					<img src="img/liaoning.jpg" alt="" />
+				</div>
+				<div class="mapTipList">
+					<h2>
+						<a href="">四川
+							<span>SiChuan</span>
+						</a>
+					</h2>
+					<ul>
+						<li>
+							<a href="">成都市</a>
+						</li>
+						<li>
+							<a href="">绵阳市</a>
+						</li>
+						<li>
+							<a href="">德阳市</a>
+						</li>
+						<li>
+							<a href="">攀枝花市</a>
+						</li>
+						<li>
+							<a href="">遂宁市</a>
+						</li>
+						<li>
+							<a href="">南充市</a>
+						</li>
+						<li>
+							<a href="">广元市</a>
+						</li>
+						<li>
+							<a href="">乐山市</a>
+						</li>
+						<li>
+							<a href="">宜宾市</a>
+						</li>
+						<li>
+							<a href="">泸州市</a>
+						</li>
+						<li>
+							<a href="">达州市</a>
+						</li>
+						<li>
+							<a href="">广安市</a>
+						</li>
+						<li>
+							<a href="">巴中市</a>
+						</li>
+						<li>
+							<a href="">雅安市</a>
+						</li>
+						<li>
+							<a href="">内江市</a>
+						</li>
+						<li>
+							<a href="">自贡市</a>
+						</li>
+						<li>
+							<a href="">资阳市</a>
+						</li>
+						<li>
+							<a href="">眉山市</a>
+						</li>
+						<li>
+							<a href="">江油市</a>
+						</li>
+						<li>
+							<a href="">阆中市</a>
+						</li>
+						<li>
+							<a href="">华蓥市</a>
+						</li>
+						<li>
+							<a href="">万源市</a>
+						</li>
+						<li>
+							<a href="">崇州市</a>
+						</li>
+						<li>
+							<a href="">简阳市</a>
+						</li>
+						<li>
+							<a href="">西昌市</a>
+						</li>
+						<li>
+							<a href="">什邡市</a>
+						</li>
+						<li>
+							<a href="">彭州市</a>
+						</li>
+						<li>
+							<a href="">峨眉山市</a>
+						</li>
+						<li>
+							<a href="">都江堰市</a>
+						</li>
+						<li>
+							<a href="">邛崃市</a>
+						</li>
+						<li>
+							<a href="">广汉市</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function () {
+			$('#ChinaMap').SVGMap({
+				mapWidth: 1209,
+				mapHeight: 750
+			});
+		});
+		$(window).bind("scroll", function () {
+			var top = $(this).scrollTop(); // 当前窗口的滚动距离
+			// console.log($(this))
+			if (top > 1) {
+				$(".nav").css({
+					"background": "white",
+					"opacity": "0.8",
+					"transition": "background-color 1s"
+				});
+				$(".nav-table a").css("color", "black");
+				$(".company a").css("color", "black");
+				$(".logo span").css("color", "black");
+				$(".am-input-group").css("opacity", "1")
+				$(".title").attr("src", "img/标题-黑.png")
+			}
+			if (top == 0) {
+				$(".nav").css({
+					"background": "none",
+					"opacity": "1",
+				});
+				$(".nav-table a").css("color", "white");
+				$(".company a").css("color", "white");
+				$(".logo span").css("color", "white");
+				$(".am-input-group").css("opacity", "0.5")
+				$(".title").attr("src", "img/标题.png")
+			}
+		});
+	</script>
+</body>
+
+</html>
