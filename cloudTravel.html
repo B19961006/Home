@@ -1,19 +1,18 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>云游天下</title>
-	<link rel="stylesheet" href="assets/css/amazeui.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/css/amazeui.min.css">
 	<link rel="stylesheet" href="css/clouldTravel.css">
-	<script src="js/map-js/lib/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/map-js/lib/raphael-min.js"></script>
-	<script type="text/javascript" src="js/map-js/res/chinaMapConfig.js"></script>
-	<script type="text/javascript" src="js/map-js/map-min.js"></script>
+	<title>Document</title>
+
 </head>
 
 <body>
-	<div class="head">
+	<div class="am-g head">
 		<div class="nav">
 			<table class="nav-table">
 				<tr>
@@ -80,286 +79,70 @@
 			</table>
 		</div>
 	</div>
-	<div class="am-g wrap">
-		<div class="itemCon">
-			<div id="ChinaMap"></div>
-			<div id="stateTip"></div>
-		</div>
-
-		<div id="mapTipContent">
-			<div class="mapTipText mapTipText0">
-				<div class="mapTipImg">
-					<img src="img/heilongjiang.jpg" alt="" />
-				</div>
-				<div class="mapTipList">
-					<h2>
-						<a href="">黑龙江
-							<span>Heilongjiang</span>
-						</a>
-					</h2>
+	<div id="main"></div>
+	<div id="provence"></div>
+	<div id="city">
+		<div class="city-img">
+			<img src="img/nanchong-noBack.png" alt="">
+			<div class="xichong">
+				<h1>西充县</h1>
+				<div class="cooperate">
 					<ul>
 						<li>
-							<a href="">哈尔滨</a>
+							<a href="">
+								<h2>古楼镇</h2>
+							</a>
 						</li>
 						<li>
-							<a href="">漠河</a>
+							<a href="">古楼镇鲜家坝村</a>
 						</li>
 						<li>
-							<a href="">五大连池</a>
+							<a href="">古楼镇唇牙村</a>
 						</li>
 						<li>
-							<a href="">兴凯湖</a>
-						</li>
-						<li>
-							<a href="">雪乡</a>
-						</li>
-						<li>
-							<a href="">大兴安岭</a>
-						</li>
-						<li>
-							<a href="">齐齐哈尔</a>
-						</li>
-						<li>
-							<a href="">牡丹江</a>
-						</li>
-						<li>
-							<a href="">伊春</a>
-						</li>
-						<li>
-							<a href="">大庆</a>
-						</li>
-						<li>
-							<a href="">镜泊湖</a>
-						</li>
-						<li>
-							<a href="">帽儿山</a>
+							<a href="">古楼镇冯二垭村</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="mapTipText mapTipText1">
-				<div class="mapTipImg">
-					<img src="img/jilin.jpg" alt="" />
-				</div>
-				<div class="mapTipList">
-					<h2>
-						<a href="">吉林
-							<span>Jilin</span>
-						</a>
-					</h2>
+			<div class="nanchong">
+				<h1>南充市</h1>
+				<div class="cooperate">
 					<ul>
 						<li>
-							<a href="">长白山</a>
+							<a href="">古楼镇鲜家坝村</a>
 						</li>
 						<li>
-							<a href="">长春</a>
+							<a href="">古楼镇唇牙村</a>
 						</li>
 						<li>
-							<a href="">延吉</a>
-						</li>
-						<li>
-							<a href="">雾凇岛</a>
-						</li>
-						<li>
-							<a href="">集安</a>
-						</li>
-						<li>
-							<a href="">吉林市</a>
-						</li>
-						<li>
-							<a href="">查干湖</a>
-						</li>
-						<li>
-							<a href="">三角龙湾</a>
-						</li>
-						<li>
-							<a href="">通化</a>
-						</li>
-						<li>
-							<a href="">四平</a>
-						</li>
-						<li>
-							<a href="">松原</a>
-						</li>
-						<li>
-							<a href="">白城</a>
+							<a href="">古楼镇冯二垭村</a>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="mapTipText mapTipText2">
-				<div class="mapTipImg">
-					<img src="img/liaoning.jpg" alt="" />
-				</div>
-				<div class="mapTipList">
-					<h2>
-						<a href="">辽宁
-							<span>Liaoning</span>
-						</a>
-					</h2>
-					<ul>
-						<li>
-							<a href="">大连</a>
-						</li>
-						<li>
-							<a href="">丹东</a>
-						</li>
-						<li>
-							<a href="">沈阳</a>
-						</li>
-						<li>
-							<a href="">兴城</a>
-						</li>
-						<li>
-							<a href="">葫芦岛</a>
-						</li>
-						<li>
-							<a href="">绥中</a>
-						</li>
-						<li>
-							<a href="">旅顺</a>
-						</li>
-						<li>
-							<a href="">锦州</a>
-						</li>
-						<li>
-							<a href="">抚顺</a>
-						</li>
-						<li>
-							<a href="">鞍山</a>
-						</li>
-						<li>
-							<a href="">本溪</a>
-						</li>
-						<li>
-							<a href="">营口</a>
-						</li>
-						<li>
-							<a href="">盘锦</a>
-						</li>
-						<li>
-							<a href="">长兴岛</a>
-						</li>
-					</ul>
-				</div>
+			<div class="pengan">
+				<h1>蓬安县</h1>
 			</div>
-			<div class="mapTipText mapTipText17" style="height: 220px;">
-				<div class="mapTipImg">
-					<img src="img/liaoning.jpg" alt="" />
-				</div>
-				<div class="mapTipList">
-					<h2>
-						<a href="">四川
-							<span>SiChuan</span>
-						</a>
-					</h2>
-					<ul>
-						<li>
-							<a href="">成都市</a>
-						</li>
-						<li>
-							<a href="">绵阳市</a>
-						</li>
-						<li>
-							<a href="">德阳市</a>
-						</li>
-						<li>
-							<a href="">攀枝花市</a>
-						</li>
-						<li>
-							<a href="">遂宁市</a>
-						</li>
-						<li>
-							<a href="">南充市</a>
-						</li>
-						<li>
-							<a href="">广元市</a>
-						</li>
-						<li>
-							<a href="">乐山市</a>
-						</li>
-						<li>
-							<a href="">宜宾市</a>
-						</li>
-						<li>
-							<a href="">泸州市</a>
-						</li>
-						<li>
-							<a href="">达州市</a>
-						</li>
-						<li>
-							<a href="">广安市</a>
-						</li>
-						<li>
-							<a href="">巴中市</a>
-						</li>
-						<li>
-							<a href="">雅安市</a>
-						</li>
-						<li>
-							<a href="">内江市</a>
-						</li>
-						<li>
-							<a href="">自贡市</a>
-						</li>
-						<li>
-							<a href="">资阳市</a>
-						</li>
-						<li>
-							<a href="">眉山市</a>
-						</li>
-						<li>
-							<a href="">江油市</a>
-						</li>
-						<li>
-							<a href="">阆中市</a>
-						</li>
-						<li>
-							<a href="">华蓥市</a>
-						</li>
-						<li>
-							<a href="">万源市</a>
-						</li>
-						<li>
-							<a href="">崇州市</a>
-						</li>
-						<li>
-							<a href="">简阳市</a>
-						</li>
-						<li>
-							<a href="">西昌市</a>
-						</li>
-						<li>
-							<a href="">什邡市</a>
-						</li>
-						<li>
-							<a href="">彭州市</a>
-						</li>
-						<li>
-							<a href="">峨眉山市</a>
-						</li>
-						<li>
-							<a href="">都江堰市</a>
-						</li>
-						<li>
-							<a href="">邛崃市</a>
-						</li>
-						<li>
-							<a href="">广汉市</a>
-						</li>
-					</ul>
-				</div>
+			<div class="yingshan">
+				<h1>营山县</h1>
+			</div>
+			<div class="yilong">
+				<h1>仪陇县</h1>
+			</div>
+			<div class="langzhong">
+				<h1>阆中市</h1>
+			</div>
+			<div class="nanbu">
+				<h1>南部县</h1>
 			</div>
 		</div>
 	</div>
-
-	<script>
-		$(function () {
-			$('#ChinaMap').SVGMap({
-				mapWidth: 1209,
-				mapHeight: 750
-			});
-		});
+	<div>2</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="assets/echarts-2.2.7/build/dist/echarts.js"></script>
+	<script src="assets/echarts-2.2.7/build/dist/echarts-all.js"></script>
+	<script type="text/javascript">
 		$(window).bind("scroll", function () {
 			var top = $(this).scrollTop(); // 当前窗口的滚动距离
 			// console.log($(this))
@@ -387,6 +170,223 @@
 				$(".title").attr("src", "img/标题.png")
 			}
 		});
+		// <!--地图 -->
+
+		require.config({
+			paths: {
+				echarts: 'assets/echarts-2.2.7/build/dist'
+			}
+		});
+		require(
+			[
+				'echarts',
+				'echarts/chart/map' // 使用柱状图就加载bar模块，按需加载
+			],
+			function (ec) {
+
+				// --- 地图 ---
+				var myChart = ec.init(document.getElementById('main'));
+				myChart.setOption({
+					tooltip: {
+						trigger: 'item',
+						formatter: '{b}'
+					},
+					series: [{
+						name: '中国',
+						type: 'map',
+						mapType: 'china',
+						// tooltip: '1123',
+						selectedMode: 'single',
+						itemStyle: {
+							normal: {
+								areaStyle: {
+									color: 'orange',
+								},
+								borderColor: 'white',
+								label: {
+									show: true
+								}
+							},
+							emphasis: {
+								areaStyle: {
+									color: 'blue',
+								},
+								label: {
+									show: true
+								}
+							}
+						},
+						data: [{
+							name: '四川',
+							selected: true
+						}]
+					}]
+				});
+				var ecConfig = require('echarts/config');
+				myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param) {
+					var selected = param.selected;
+					var provence = param.target; //获取所选定的省份
+					console.log(param.target)
+					document.getElementById("provence").style.display = "block";
+					mapDisplay(provence);
+					chinaDisapper();
+				});
+			}
+		);
+
+		function chinaDisapper() {
+			var t = document.getElementById("main");
+			t.style.display = "none"
+		};
+
+		function mapDisplay(provence) {
+			var myChart = echarts.init(document.getElementById('provence'));
+			var option = {
+				title: {
+					text: '四川省区域农牧云合作对象',
+					//subtext: '-。-'  //子标题
+				},
+				tooltip: {
+					trigger: 'item',
+					formatter: function (a) { //鼠标移到某个州市上弹出的提示内容。包括显示样式可以自定义，利用return返回样式即可。
+						return a[1] + ":" + a[2]; //a[1]:州市名称，a[2]:data中的valuez值。
+					}
+				},
+
+				legend: {
+					orient: 'vertical',
+					x: 'right',
+					data: ['数据名称']
+				},
+
+				dataRange: {
+					min: 0,
+					max: 10,
+					color: ['red', 'rgb(220,220,220)'],
+					//color: ['orange', 'blue'],
+					boder: 3,
+					text: ['10', '0'], // 文本，默认为数值文本
+					calculable: true
+				},
+				series: [{
+					//name: '数据名称',
+					type: 'map',
+					mapType: provence, //如果是其他省份，也可以改变，例如：上海，北京，天津等地。
+					selectedMode: 'single',
+					itemStyle: {
+						normal: {
+							label: {
+								show: true
+							},
+							borderWidth: 2, //省份的边框宽度
+							childBorderWidth: 2,
+							childBorderColor: '#6EA1F4'
+						},
+						emphasis: {
+							label: {
+								show: true
+							}
+						}
+					},
+					//data一定要有，不然没有图
+					data: [{
+							name: '阿坝藏族羌族自治州',
+							value: 0
+						},
+						{
+							name: '巴中市',
+							value: 0
+						},
+						{
+							name: '成都市',
+							value: 0
+						},
+						{
+							name: '达州市',
+							value: 0
+						},
+						{
+							name: '德阳市',
+							value: 0
+						},
+						{
+							name: '甘孜藏族自治州',
+							value: 0
+						},
+						{
+							name: '广安市',
+							value: 0
+						},
+						{
+							name: '广元市',
+							value: 0
+						},
+						{
+							name: '乐山市',
+							value: 0
+						},
+						{
+							name: '凉山彝族自治州',
+							value: 0
+						},
+						{
+							name: '泸州市',
+							value: 0
+						},
+						{
+							name: '眉山市',
+							value: 0
+						},
+						{
+							name: '绵阳市',
+							value: 0
+						},
+						{
+							name: '内江市',
+							value: 0
+						},
+						{
+							name: '南充市',
+							value: 3,
+						},
+						{
+							name: '攀枝花市',
+							value: 0
+						},
+						{
+							name: '遂宁市',
+							value: 0
+						},
+						{
+							name: '雅安市',
+							value: 0
+						},
+						{
+							name: '宜宾市',
+							value: 0
+						},
+						{
+							name: '资阳市',
+							value: 0
+						},
+						{
+							name: '自贡市',
+							value: 0
+						}
+					]
+				}]
+			};
+			myChart.setOption(option);
+			var ecConfig = require('echarts/config');
+			myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param) {
+				var selected = param.selected;
+				var provence = param.target;
+				console.log(param.target)
+				document.getElementById("provence").style.display = "none";
+				document.getElementById("city").style.display = "block";
+			});
+
+		}
 	</script>
 </body>
 
