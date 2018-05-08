@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../img/gulouImg0.JPG);
+    background-image: url(../img/gulouImg1.JPG);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -109,12 +109,13 @@ body {
 }
 
 .city-img img {
-    width: 100%
+    width: 100%;
+    opacity: 0.8;
 }
 
 .city-img h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
     line-height: 189px;
 }
 

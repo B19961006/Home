@@ -90,7 +90,7 @@
 					<ul>
 						<li>
 							<a href="">
-								<h2>古楼镇</h2>
+								<h5>古楼镇</h5>
 							</a>
 						</li>
 						<li>
@@ -200,16 +200,17 @@
 						itemStyle: {
 							normal: {
 								areaStyle: {
-									color: 'orange',
+									color: 'rgba(255,255,255,0.8)',
 								},
-								borderColor: 'white',
+								borderColor: 'grey',
 								label: {
 									show: true
 								}
 							},
 							emphasis: {
 								areaStyle: {
-									color: 'blue',
+									color: 'rgba(255,130,71)',
+
 								},
 								label: {
 									show: true
@@ -242,32 +243,21 @@
 		function mapDisplay(provence) {
 			var myChart = echarts.init(document.getElementById('provence'));
 			var option = {
-				title: {
-					text: '四川省区域农牧云合作对象',
-					//subtext: '-。-'  //子标题
-				},
 				tooltip: {
 					trigger: 'item',
 					formatter: function (a) { //鼠标移到某个州市上弹出的提示内容。包括显示样式可以自定义，利用return返回样式即可。
 						return a[1] + ":" + a[2]; //a[1]:州市名称，a[2]:data中的valuez值。
 					}
 				},
-
-				legend: {
-					orient: 'vertical',
-					x: 'right',
-					data: ['数据名称']
-				},
-
-				dataRange: {
-					min: 0,
-					max: 10,
-					color: ['red', 'rgb(220,220,220)'],
-					//color: ['orange', 'blue'],
-					boder: 3,
-					text: ['10', '0'], // 文本，默认为数值文本
-					calculable: true
-				},
+				// dataRange: {
+				// 	min: 0,
+				// 	max: 10,
+				// 	color: ['red', 'rgb(220,220,220)'],
+				// 	//color: ['orange', 'blue'],
+				// 	boder: 3,
+				// 	text: ['10', '0'], // 文本，默认为数值文本
+				// 	calculable: true
+				// },
 				series: [{
 					//name: '数据名称',
 					type: 'map',
@@ -275,14 +265,18 @@
 					selectedMode: 'single',
 					itemStyle: {
 						normal: {
+							areaStyle: {
+								color: 'rgba(255,255,255,0.8)',
+							},
 							label: {
 								show: true
 							},
-							borderWidth: 2, //省份的边框宽度
-							childBorderWidth: 2,
-							childBorderColor: '#6EA1F4'
 						},
 						emphasis: {
+							areaStyle: {
+								color: 'rgba(255,130,71)',
+
+							},
 							label: {
 								show: true
 							}
@@ -348,6 +342,7 @@
 						{
 							name: '南充市',
 							value: 3,
+							selected: true
 						},
 						{
 							name: '攀枝花市',
