@@ -1174,7 +1174,7 @@ h2.modal-title {
 	border: none;
 	outline: none;
 	margin: 0;
-	-webkit-appearance: none;
+	/* -webkit-appearance: none; */
 	background: #fff;
 	color: #000;
 }
@@ -1189,7 +1189,7 @@ h2.modal-title {
 	text-transform: uppercase;
 	padding: .8em 1em;
 	text-align: center;
-	-webkit-appearance: none;
+	/* -webkit-appearance: none; */
 	outline: none;
 	width: 30%;
 	transition: 0.5s all;
