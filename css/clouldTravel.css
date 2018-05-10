@@ -104,9 +104,9 @@ body {
     height: 1171px;
 }
 
-.city-img div {
+/* .city-img div {
     cursor: pointer;
-}
+} */
 
 .city-img img {
     width: 100%;
@@ -147,14 +147,84 @@ body {
     color: orange;
 }
 
+/* 合作地点 圆点显示 */
+
+.gulou-cooperate0 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    animation: scale infinite 1s;
+    top: -184px;
+    left: 158px;
+    z-index: 9999;
+}
+
+#gulou-cooperate0-name {
+    text-decoration: none;
+    position: relative;
+    top: -202px;
+    left: 180px;
+    display: none;
+    z-index: 10000;
+}
+
+#gulou-cooperate0-name a {
+    font-size: 1.3em;
+    /* color: orange; */
+}
+
+#gulou-cooperate0-img {
+    width: 400px;
+    position: relative;
+    top: -243px;
+    left: -255px;
+    display: none;
+    animation: imgDisp 1s;
+}
+
+#gulou-cooperate0-img img {
+    opacity: 1;
+    width: 100%;
+}
+
+@keyframes imgDisp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 200%;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 介绍图片 */
+
+.gulou {
+    width: 200px;
+    height: 15 0px;
+}
+
 /* 西充 */
 
 .xichong {
     position: relative;
     width: 194px;
     height: 189px;
-    top: -600px;
-    left: 266px;
+    top: -722px;
+    left: 234px;
 }
 
 .xichong:hover .cooperate {
@@ -167,8 +237,8 @@ body {
     position: relative;
     width: 194px;
     height: 189px;
-    top: -588px;
-    left: 417px;
+    top: -677px;
+    left: 409px;
 }
 
 .nanchong:hover h1 {
@@ -185,8 +255,8 @@ body {
     position: relative;
     width: 180px;
     height: 189px;
-    top: -911px;
-    left: 655px;
+    top: -1022px;
+    left: 641px;
     /* line-height: 100px; */
 }
 
@@ -196,8 +266,8 @@ body {
     position: relative;
     width: 180px;
     height: 189px;
-    top: -1247px;
-    left: 853px;
+    top: -1352px;
+    left: 831px;
 }
 
 /* 仪陇 */
@@ -206,8 +276,8 @@ body {
     position: relative;
     width: 180px;
     height: 189px;
-    top: -1667px;
-    left: 751px;
+    top: -1775px;
+    left: 739px;
 }
 
 /* 阆中 */
@@ -216,7 +286,7 @@ body {
     position: relative;
     width: 180px;
     height: 189px;
-    top: -1959px;
+    top: -2080px;
     left: 382px;
 }
 
@@ -226,6 +296,6 @@ body {
     position: relative;
     width: 180px;
     height: 189px;
-    top: -1945px;
+    top: -2047px;
     left: 294px;
 }

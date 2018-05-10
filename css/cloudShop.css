@@ -8,13 +8,13 @@ body {
 /*导航窗*/
 
 .head a {
-    color: white;
+    color: black;
 }
 
 .head {
     width: 100%;
     height: 35px;
-    color: white;
+    color: black;
     font-size: 16px;
     line-height: 35px;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .head {
-    position: fixed;
+    position: unset;
     height: 100px;
     z-index: 9999;
 }

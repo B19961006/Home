@@ -83,15 +83,42 @@
 	<div id="provence"></div>
 	<div id="city">
 		<div class="city-img">
-			<img src="img/nanchong-noBack.png" alt="">
+			<img src="img/nanchong2.png" alt="">
 			<div class="xichong">
 				<h1>西充县</h1>
-				<div class="cooperate">
+				<a href="">
+					<div class="gulou-cooperate0">
+
+					</div>
+				</a>
+
+				<div id="gulou-cooperate0-name">
+					<a href="">古楼镇</a>
+					<p></p>
+				</div>
+				<div id="gulou-cooperate0-img">
+					<img src="img/gulou-slider0.JPG" />
+					<!-- <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+						<ul class="am-slides">
+							<li>
+								<img src="img/gulou-slider0.JPG" />
+							</li>
+							<li>
+								<img src="img/gulou-slider1.JPG" />
+							</li>
+							<li>
+								<img src="img/gulou-slider2.JPG" />
+							</li>
+						</ul>
+					</div> -->
+				</div>
+				<!-- <div class="cooperate">
 					<ul>
 						<li>
 							<a href="">
 								<h5>古楼镇</h5>
 							</a>
+
 						</li>
 						<li>
 							<a href="">古楼镇鲜家坝村</a>
@@ -103,11 +130,11 @@
 							<a href="">古楼镇冯二垭村</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 			<div class="nanchong">
 				<h1>南充市</h1>
-				<div class="cooperate">
+				<!-- <div class="cooperate">
 					<ul>
 						<li>
 							<a href="">古楼镇鲜家坝村</a>
@@ -119,7 +146,7 @@
 							<a href="">古楼镇冯二垭村</a>
 						</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 			<div class="pengan">
 				<h1>蓬安县</h1>
@@ -140,16 +167,32 @@
 	</div>
 	<div>2</div>
 	<script src="js/jquery.min.js"></script>
+	<script src="assets/js/amazeui.js "></script>
 	<script src="assets/echarts-2.2.7/build/dist/echarts.js"></script>
 	<script src="assets/echarts-2.2.7/build/dist/echarts-all.js"></script>
 	<script type="text/javascript">
+		$(function () {
+			$(".gulou-cooperate0").mouseover(function () {
+				$("#gulou-cooperate0-name").css("display", "block");
+				$("#gulou-cooperate0-img").css({
+
+					"transition": "display linear 1s",
+					"display": "block",
+				});
+			}).mouseleave(function () {
+				$("#gulou-cooperate0-name").css("display", "none")
+				$("#gulou-cooperate0-img").css({
+					"display": "none",
+				});
+			});
+		});
 		$(window).bind("scroll", function () {
 			var top = $(this).scrollTop(); // 当前窗口的滚动距离
 			// console.log($(this))
 			if (top > 1) {
 				$(".nav").css({
 					"background": "white",
-					"opacity": "0.8",
+					"opacity": "1",
 					"transition": "background-color 1s"
 				});
 				$(".nav-table a").css("color", "black");
