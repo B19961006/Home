@@ -92,6 +92,8 @@ a::after {
 }
 
 .detail-table th {
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     border: 1px solid rgb(220, 220, 220);
 }

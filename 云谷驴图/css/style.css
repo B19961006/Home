@@ -1968,3 +1968,24 @@ a.fa.fa-dribbble.icon.icon-border.dribbble:hover {
 }
 
 /* -- //Responsive code -- */
+
+/* add */
+
+.kaocha {
+	list-style: none;
+}
+
+.kaocha li {
+	border-bottom: 1px dashed;
+	height: 50px;
+	font-size: 1.3em;
+	line-height: 50px;
+}
+
+.kaocha a {
+	color: black;
+}
+
+.kaocha span {
+	float: right;
+}
