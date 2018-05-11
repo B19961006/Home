@@ -26,13 +26,14 @@ a::after {
 .head {
     /* position: fixed; */
     height: 100px;
-    z-index: 9999;
     position: unset;
+    z-index: 9999;
 }
 
 .nav {
     height: 100px;
-    background: black;
+    width: 100%;
+    background: unset;
 }
 
 .nav-table td {
@@ -77,7 +78,7 @@ a::after {
 }
 
 .head a {
-    color: white;
+    color: black;
 }
 
 /* 评论区CSS */

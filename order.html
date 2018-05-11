@@ -12,88 +12,79 @@
 </head>
 
 <body>
-    <div class="nav">
-        <table>
-            <tr>
-                <th class="logo">
-                    <img src="img/农牧云3.png" alt="">
-                    <span class="title">农牧云</span>
-                </th>
-                <th class="farm">
-                    <span>四川优质牧场</span>
-                </th>
-                <th>
-                    <div class="am-input-group am-input-group-danger">
-
-                        <input type="text" class="am-form-field">
-                        <span class="am-input-group-btn">
-                            <button class="am-btn am-btn-danger" type="button">
-                                <span class="am-icon-search">搜索本牧场</span>
-                            </button>
-                        </span>
-                    </div>
-                </th>
-                <th class="shopCart">
-                    <button class="am-btn am-btn-default" type="button">
-                        <span class="am-icon-shopping-bag"></span>
-                        <span class="shopCart-span">我的购物车
-                            <span style="color: red;">5</span>
-                        </span>
-                    </button>
-                </th>
-            </tr>
-        </table>
-    </div>
-    <div class="am-g body-head">
-        <!-- <div class="am-u-lg-12 info">
-            <table class="inf-table">
+    <div class="am-g head">
+        <div class="nav">
+            <table class="nav-table">
                 <tr>
-                    <th>
-                        这里需要东西
-                    </th>
-                    <th>
-                        这里需要东西
-                    </th>
-                    <th>
-                        这里需要东西
-                    </th>
+                    <td class="logo">
+                        <div class="logo-title">
+                            <img class="title" src="img/标题-黑.png" alt="">
+                        </div>
+                        <div class="logo-img">
+                            <img src="img/农牧云3.png" alt="">
+                        </div>
+
+                    </td>
+                    <td>
+                        <a href="">首页
+                            <br>
+                            <span>Home&nbsp;Page</span>
+                        </a>
+
+                    </td>
+                    <td>
+                        <a href="">
+                            云上集市
+                            <br>
+                            <span>Cloud&nbsp;Shop</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            云上农场
+                            <br>
+                            <span>Cloud&nbsp;Farm</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">云游天下
+                            <br>
+                            <span>Travel&nbsp;world</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a href=""> 个人中心
+                            <br>
+                            <span>Personal&nbsp;Center</span>
+                        </a>
+
+                    </td>
+                    <td class="company">
+                        <a href="">
+                            关于我们
+                            <br>
+                            <span>About&nbsp;Us</span>
+                        </a>
+                    </td>
+                    <td class="serch">
+                        <div class="am-input-group">
+                            <button class="am-btn am-btn-default" type="button">
+                                <span class="am-icon-shopping-bag"></span>
+                                <span class="shopCart-span">我的购物车
+                                    <span style="color: red;">5</span>
+                                </span>
+                            </button>
+                        </div>
+                    </td>
                 </tr>
             </table>
-        </div> -->
-        <div class="main-nav">
-            <ul class="am-nav am-nav-pills am-nav-justify">
-                <li class="am-active">
-                    <a href="#">首页</a>
-                </li>
-                <li>
-                    <a href="#">所有商品</a>
-                </li>
-                <li>
-                    <a href="#">荔枝</a>
-                </li>
-                <li>
-                    <a href="#">苹果</a>
-                </li>
-
-                <li>
-                    <a href="#">猕猴桃</a>
-                </li>
-
-                <li>
-                    <a href="#">芒果</a>
-                </li>
-
-                <li>
-                    <a href="#">石榴</a>
-                </li>
-            </ul>
         </div>
-
     </div>
+
     <div class="detail am-g">
         <div class="am-u-sm-12">
             <div class="am-u-sm-6">
-                <img style="width: 90%;border: 1px solid;" src="img/牛肉.jpg" alt="">
+                <img style="width: 90%;" src="img/牛肉.jpg" alt="">
             </div>
             <div class="am-u-sm-6">
                 <ul class="am-list" style="height:100%">
@@ -209,18 +200,10 @@
             <a href="">管理登录</a>
         </p>
     </div>
-
     <script src="assets/js/jquery.js "></script>
     <script src="assets/js/amazeui.min.js "></script>
     <script src="assets/js/app.js "></script>
-    <script>
-        var price = $("#price").text();
-        $("#add-cart").click(function () {
-            alert("成功加入购物车");
-            $("#count-input").val(1);
-            $("#total-price").html(price);
-        });
-    </script>
+
 </body>
 
 </html>

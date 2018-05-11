@@ -18,7 +18,7 @@
                 <tr>
                     <td class="logo">
                         <div class="logo-title">
-                            <img class="title" src="img/标题.png" alt="">
+                            <img class="title" src="img/标题-黑.png" alt="">
                         </div>
                         <div class="logo-img">
                             <img src="img/农牧云3.png" alt="">
@@ -103,22 +103,25 @@
             </tr>
             <tr>
                 <td colspan="6" style="padding-top: 5px;">
-                    <ul class="am-nav am-nav-tabs">
-                        <li id="number-0" class="am-active">
-                            <a href="#">第一期成长状态</a>
-                        </li>
-                        <li id="number-1">
-                            <a href="#">第二期成长状态</a>
-                        </li>
-                        <li id="number-2">
-                            <a href="#">第三期成长状态</a>
-                        </li>
-                    </ul>
+                    <div>
+                        <ul class="am-nav am-nav-tabs">
+                            <li id="number-0" class="am-active">
+                                <a href="#">第一期成长状态</a>
+                            </li>
+                            <li id="number-1">
+                                <a href="#">第二期成长状态</a>
+                            </li>
+                            <li id="number-2">
+                                <a href="#">第三期成长状态</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </td>
             </tr>
             <tr>
                 <td colspan="6">
-                    <div id="number-disc-0" class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0" style="display: block">
+                    <div style="z-index:-10;" id="number-disc-0" class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
                         <ul class="am-slides">
                             <li>
                                 <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" />
@@ -128,10 +131,10 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="number-disc-1" class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0" style="display: none">
+                    <div style="z-index:-10;display: none" id="number-disc-1" class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
                         <video src="../农牧云2.mp4" width="100%;" controls></video>
                     </div>
-                    <div id="number-disc-2" class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0" style="display: none">
+                    <div style="z-index:-10;display: none" id="number-disc-2" class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
                         <p>亲，您订购的商品还处于第二期成长中。</p>
                         <p>敬请期待它的成长。</p>
                     </div>
@@ -275,35 +278,35 @@
 
     <script>
         // var ue = UE.getEditor('container');
-        // $(window).bind("scroll", function () {
-        //     var top = $(this).scrollTop(); // 当前窗口的滚动距离
-        //     // console.log($(this))
-        //     if (top > 1) {
-        //         $(".nav").css({
-        //             "background": "black",
-        //             "opacity": "0.8",
-        //             "transition": "background-color 1s",
-        //             "position": "fixed"
-        //         });
+        $(window).bind("scroll", function () {
+            var top = $(this).scrollTop(); // 当前窗口的滚动距离
+            // console.log($(this))
+            if (top > 1) {
+                $(".nav").css({
+                    "background": "white",
+                    "opacity": "1",
+                    "transition": "background-color 1s",
+                    "position": "fixed"
+                });
 
-        //         $(".nav-table a").css("color", "white");
-        //         $(".company a").css("color", "white");
-        //         $(".logo span").css("color", "white");
-        //         $(".am-input-group").css("opacity", "1")
-        //         $(".title").attr("src", "img/标题.png")
-        //     }
-        //     if (top == 0) {
-        //         $(".nav").css({
-        //             "background": "none",
-        //             "opacity": "1",
-        //             "position": "unset"
-        //         });
-        //         $(".nav-table a").css("color", "black");
-        //         $(".company a").css("color", "black");
-        //         $(".am-input-group").css("opacity", "0.5")
-        //         $(".title").attr("src", "img/标题-黑.png")
-        //     }
-        // });
+                $(".nav-table a").css("color", "black");
+                $(".company a").css("color", "black");
+                $(".logo span").css("color", "white");
+                $(".am-input-group").css("opacity", "1")
+                $(".title").attr("src", "img/标题-黑.png")
+            }
+            if (top == 0) {
+                $(".nav").css({
+                    "background": "none",
+                    "opacity": "1",
+                    "position": "unset"
+                });
+                $(".nav-table a").css("color", "black");
+                $(".company a").css("color", "black");
+                $(".am-input-group").css("opacity", "0.5")
+                $(".title").attr("src", "img/标题-黑.png")
+            }
+        });
         var count;
         $(() => {
             count = $(".am-nav-tabs li").length
