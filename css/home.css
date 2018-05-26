@@ -73,6 +73,11 @@ a::after {
     height: 80px;
 }
 
+.company {
+    padding-right: 100px;
+}
+
+/* 搜索框 
 .serch {
     width: 20%；
 }
@@ -83,7 +88,7 @@ a::after {
 
 .nav-table a {
     color: white;
-}
+} */
 
 /* body */
 

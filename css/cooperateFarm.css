@@ -122,6 +122,18 @@ a::after {
     height: 80px;
 }
 
+@media screen and (min-width:1400px) {
+    .company {
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width:1399px) {
+    .company {
+        padding-right: 100px;
+    }
+}
+
 .serch {
     width: 20%；
 }
@@ -167,9 +179,9 @@ a::after {
     width: 60%;
     float: left;
     display: -webkit-box;
-    -webkit-box-orient: vertical;
+    box-orient: vertical;
     /* 限制行数 */
-    -webkit-line-clamp: 9;
+    line-clamp: 9;
     overflow: hidden;
 }
 
