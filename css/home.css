@@ -29,6 +29,10 @@ a::after {
     z-index: 9999;
 }
 
+.head a {
+    color: white;
+}
+
 .nav {
     height: 100px;
     background: none;
@@ -74,7 +78,12 @@ a::after {
 }
 
 .company {
-    padding-right: 100px;
+    padding-right: 200px;
+}
+
+.user-logo img {
+    /* width: 100px; */
+    height: 70px;
 }
 
 /* 搜索框 
