@@ -8,23 +8,84 @@ body {
     overflow: auto;
 }
 
-.nav {
-    width: 1200px;
-    margin: 0 auto;
+/*导航窗*/
+
+.head a {
+    color: black;
 }
 
-.nav table {
+.head {
     width: 100%;
+    height: 35px;
+    color: black;
+    font-size: 16px;
+    line-height: 35px;
 }
 
-.body-head {
-    background: rgb(5, 5, 5);
+.nav-table {
+    width: 100%;
+    height: 120px;
 }
 
-.main-nav {
-    width: 900px;
-    margin: 0 auto;
+.head {
+    position: unset;
+    height: 100px;
+    z-index: 9999;
 }
+
+.nav {
+    height: 100px;
+    background: none;
+}
+
+.nav-table td {
+    font-family: 微软雅黑;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-table td:hover {
+    color: black(53, 144, 218);
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo span {
+    font-size: 2em;
+    font-family: 华文楷体;
+    color: rgb(240, 240, 240);
+}
+
+.logo-img {
+    float: right;
+}
+
+.logo-img img {
+    height: 120px;
+    /* padding-left: 260px; */
+    margin-top: 5px;
+}
+
+.logo-title {
+    padding-top: 25px;
+    float: right;
+}
+
+.title {
+    height: 80px;
+}
+
+.serch {
+    width: 20%；
+}
+
+.am-input-group {
+    width: 70%;
+}
+
+/* end导航窗 */
 
 .info {
     background: rgb(34, 132, 150);
@@ -43,12 +104,12 @@ body {
     font-size: 2em;
 }
 
-.logo {
-    width: 20vm;
+.logo_logo img {
+    height: 100px;
 }
 
-.logo img {
-    height: 100px;
+.logo_logo img:last-child {
+    height: 80px;
 }
 
 .title {
@@ -88,7 +149,9 @@ body {
 
 .desc {
     width: 1200px;
-    margin: 20 auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .goods-nav {

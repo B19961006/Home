@@ -16,6 +16,8 @@ a::after {
     color: black;
 }
 
+/* 导航 */
+
 .nav-table {
     width: 100%;
     height: 120px;
@@ -25,6 +27,10 @@ a::after {
     position: fixed;
     height: 100px;
     z-index: 9999;
+}
+
+.head a {
+    color: white;
 }
 
 .nav {
@@ -71,6 +77,16 @@ a::after {
     height: 80px;
 }
 
+.company {
+    padding-right: 200px;
+}
+
+.user-logo img {
+    /* width: 100px; */
+    height: 70px;
+}
+
+/* 搜索框 
 .serch {
     width: 20%；
 }
@@ -81,7 +97,9 @@ a::after {
 
 .nav-table a {
     color: white;
-}
+} */
+
+/* body */
 
 .content {
     width: 80vw;
